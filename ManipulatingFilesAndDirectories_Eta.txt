@@ -1,0 +1,199 @@
+Last login: Thu Feb 13 13:57:14 on ttys000
+maclab-103:~ hanse109$ cd
+maclab-103:~ hanse109$ mkdir playground
+maclab-103:~ hanse109$ cd playground
+maclab-103:playground hanse109$ mkdir dir1 dir2
+maclab-103:playground hanse109$ ls
+dir1	dir2
+maclab-103:playground hanse109$ cp /etc/passwd . 
+maclab-103:playground hanse109$ ls
+dir1	dir2	passwd
+maclab-103:playground hanse109$ ls -l
+total 16
+drwxr-xr-x  2 hanse109  UWP\Domain Users    64 Feb 13 14:20 dir1
+drwxr-xr-x  2 hanse109  UWP\Domain Users    64 Feb 13 14:20 dir2
+-rw-r--r--  1 hanse109  UWP\Domain Users  6804 Feb 13 14:20 passwd
+maclab-103:playground hanse109$ cp -v /etc/passwd
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-103:playground hanse109$ cp -v /etc/passwd .
+/etc/passwd -> ./passwd
+maclab-103:playground hanse109$ cp -i /etc/passwd .
+overwrite ./passwd? (y/n [n]) n
+not overwritten
+maclab-103:playground hanse109$ mv passwd fun
+maclab-103:playground hanse109$ ls
+dir1	dir2	fun
+maclab-103:playground hanse109$ mv fun dir1
+maclab-103:playground hanse109$ ls
+dir1	dir2
+maclab-103:playground hanse109$ mv dir1/fun dir2
+maclab-103:playground hanse109$ mv dir2/fun
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+maclab-103:playground hanse109$ mv dir2/fun .
+maclab-103:playground hanse109$ ls
+dir1	dir2	fun
+maclab-103:playground hanse109$ mv fun dir1
+maclab-103:playground hanse109$ mv dir1 dir2
+maclab-103:playground hanse109$ ls -l dir2
+total 0
+drwxr-xr-x  3 hanse109  UWP\Domain Users  96 Feb 13 14:28 dir1
+maclab-103:playground hanse109$ ls -l dir2/dir1
+total 16
+-rw-r--r--  1 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun
+maclab-103:playground hanse109$ mv dir2/dir1 .
+maclab-103:playground hanse109$ mv dir1/fun .
+maclab-103:playground hanse109$ ln fun  fun-hard
+maclab-103:playground hanse109$ ln fun dir1/fun-hard
+maclab-103:playground hanse109$ ln fun dir2/fun-hard
+maclab-103:playground hanse109$ ls -l
+total 32
+drwxr-xr-x  3 hanse109  UWP\Domain Users    96 Feb 13 14:31 dir1
+drwxr-xr-x  3 hanse109  UWP\Domain Users    96 Feb 13 14:31 dir2
+-rw-r--r--  4 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun
+-rw-r--r--  4 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun-hard
+maclab-103:playground hanse109$ ls -li
+total 32
+4305836 drwxr-xr-x  3 hanse109  UWP\Domain Users    96 Feb 13 14:31 dir1
+4305837 drwxr-xr-x  3 hanse109  UWP\Domain Users    96 Feb 13 14:31 dir2
+4305842 -rw-r--r--  4 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun
+4305842 -rw-r--r--  4 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun-hard
+maclab-103:playground hanse109$ ln -s fun fun -syn
+ln: -syn: No such file or directory
+maclab-103:playground hanse109$ ln -s fun fun -sym
+ln: -sym: No such file or directory
+maclab-103:playground hanse109$ ln -s fun fun-sym
+maclab-103:playground hanse109$ ln -s ../fun dir1/fun-sym
+maclab-103:playground hanse109$ ln -s ../fun dir2/fun-sym
+maclab-103:playground hanse109$ ls -l dir1
+total 16
+-rw-r--r--  4 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun-hard
+lrwxr-xr-x  1 hanse109  UWP\Domain Users     6 Feb 13 14:35 fun-sym -> ../fun
+maclab-103:playground hanse109$ ln -s/home/me/playground/fun dir1/fun-sym
+ln: illegal option -- /
+usage: ln [-Ffhinsv] source_file [target_file]
+       ln [-Ffhinsv] source_file ... target_dir
+       link source_file target_file
+maclab-103:playground hanse109$ ln -s /home/me/playground/fun dir1/fun-sym
+ln: dir1/fun-sym: File exists
+maclab-103:playground hanse109$ ln -s dir1 dir1-sym
+maclab-103:playground hanse109$ ls -l
+total 32
+drwxr-xr-x  4 hanse109  UWP\Domain Users   128 Feb 13 14:35 dir1
+lrwxr-xr-x  1 hanse109  UWP\Domain Users     4 Feb 13 14:39 dir1-sym -> dir1
+drwxr-xr-x  4 hanse109  UWP\Domain Users   128 Feb 13 14:35 dir2
+-rw-r--r--  4 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun
+-rw-r--r--  4 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun-hard
+lrwxr-xr-x  1 hanse109  UWP\Domain Users     3 Feb 13 14:34 fun-sym -> fun
+maclab-103:playground hanse109$ rm fun-hard 
+maclab-103:playground hanse109$ ls -l
+total 16
+drwxr-xr-x  4 hanse109  UWP\Domain Users   128 Feb 13 14:35 dir1
+lrwxr-xr-x  1 hanse109  UWP\Domain Users     4 Feb 13 14:39 dir1-sym -> dir1
+drwxr-xr-x  4 hanse109  UWP\Domain Users   128 Feb 13 14:35 dir2
+-rw-r--r--  3 hanse109  UWP\Domain Users  6804 Feb 13 14:22 fun
+lrwxr-xr-x  1 hanse109  UWP\Domain Users     3 Feb 13 14:34 fun-sym -> fun
+maclab-103:playground hanse109$ rm -i
+usage: rm [-f | -i] [-dPRrvW] file ...
+       unlink file
+maclab-103:playground hanse109$ rm -i fun
+remove fun? y
+maclab-103:playground hanse109$ ls -l
+total 0
+drwxr-xr-x  4 hanse109  UWP\Domain Users  128 Feb 13 14:35 dir1
+lrwxr-xr-x  1 hanse109  UWP\Domain Users    4 Feb 13 14:39 dir1-sym -> dir1
+drwxr-xr-x  4 hanse109  UWP\Domain Users  128 Feb 13 14:35 dir2
+lrwxr-xr-x  1 hanse109  UWP\Domain Users    3 Feb 13 14:34 fun-sym -> fun
+maclab-103:playground hanse109$ less fun-sym
+fun-sym: No such file or directory
+maclab-103:playground hanse109$ rm fun-sym dir1-sym
+maclab-103:playground hanse109$ ls -l
+total 0
+drwxr-xr-x  4 hanse109  UWP\Domain Users  128 Feb 13 14:35 dir1
+drwxr-xr-x  4 hanse109  UWP\Domain Users  128 Feb 13 14:35 dir2
+maclab-103:playground hanse109$ cd
+maclab-103:~ hanse109$ rm -r playground
+maclab-103:~ hanse109$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+Documents	Library		Music		Public
+maclab-103:~ hanse109$ ls -l
+total 0
+drwx------+  3 hanse109  UWP\Domain Users    96 Feb  4 14:02 Desktop
+drwx------+  4 hanse109  UWP\Domain Users   128 Feb  6 15:16 Documents
+drwx------+  6 hanse109  UWP\Domain Users   192 Feb 13 14:15 Downloads
+drwx------@ 58 hanse109  UWP\Domain Users  1856 Feb  6 15:18 Library
+drwx------+  3 hanse109  UWP\Domain Users    96 Feb  4 14:02 Movies
+drwx------+  3 hanse109  UWP\Domain Users    96 Feb  4 14:02 Music
+drwx------+  3 hanse109  UWP\Domain Users    96 Feb  4 14:02 Pictures
+drwxr-xr-x+  4 hanse109  UWP\Domain Users   128 Feb  4 14:02 Public
+drwxr-xr-x   3 hanse109  UWP\Domain Users    96 Feb  4 14:59 PycharmProjects
+maclab-103:~ hanse109$ cd
+maclab-103:~ hanse109$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+Documents	Library		Music		Public
+maclab-103:~ hanse109$ pwd
+/Users/hanse109
+maclab-103:~ hanse109$ mv Documents/
+.localized                                  Navigation_TheLinuxCommandLine.txt
+ManipulatingFilesAndDirectories_Output_Eta  
+maclab-103:~ hanse109$ mv Documents/ManipulatingFilesAndDirectories_Output_Eta PycharmProjects/untitled/
+.idea/ venv/  
+maclab-103:~ hanse109$ mv Documents/ManipulatingFilesAndDirectories_Output_Eta PycharmProjects/untitled/
+.idea/ venv/  
+maclab-103:~ hanse109$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+Documents	Library		Music		Public
+maclab-103:~ hanse109$ ls P
+Pictures/        Public/          PycharmProjects/ 
+maclab-103:~ hanse109$ ls PycharmProjects/
+Hansen-Erik	untitled
+maclab-103:~ hanse109$ mv Documents/ManipulatingFilesAndDirectories_Output_Eta PycharmProjects/Hansen-Erik/ManipulatingFilesAndDirectories_Eta.txt
+maclab-103:~ hanse109$ ls PycharmProjects/Hansen-Erik/
+ManipulatingFilesAndDirectories_Eta.txt
+maclab-103:~ hanse109$ cd 
+maclab-103:~ hanse109$ cd PycharmProjects/Hansen-Erik/
+maclab-103:Hansen-Erik hanse109$ git add ManipulatingFilesAndDirectories_Eta.txt 
+
+
+Agreeing to the Xcode/iOS license requires admin privileges, please run “sudo xcodebuild -license” and then retry this command.
+
+
+maclab-103:Hansen-Erik hanse109$ git add ManipulatingFilesAndDirectories_Eta.txt 
+fatal: not a git repository (or any of the parent directories): .git
+maclab-103:Hansen-Erik hanse109$ cd ..
+maclab-103:PycharmProjects hanse109$ cd ..
+maclab-103:~ hanse109$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+Documents	Library		Music		Public
+maclab-103:~ hanse109$ cd Documents/
+maclab-103:Documents hanse109$ ls
+Navigation_TheLinuxCommandLine.txt
+maclab-103:Documents hanse109$ cd ..
+maclab-103:~ hanse109$ cd PycharmProjects/
+maclab-103:PycharmProjects hanse109$ ls
+Hansen-Erik	untitled
+maclab-103:PycharmProjects hanse109$ Hansen-Erik/
+-bash: Hansen-Erik/: is a directory
+maclab-103:PycharmProjects hanse109$ cd Hansen-Erik/
+maclab-103:Hansen-Erik hanse109$ la
+-bash: la: command not found
+maclab-103:Hansen-Erik hanse109$ ls
+ManipulatingFilesAndDirectories_Eta.txt
+maclab-103:Hansen-Erik hanse109$ git add ManipulatingFilesAndDirectories_Eta.txt 
+fatal: not a git repository (or any of the parent directories): .git
+maclab-103:Hansen-Erik hanse109$ git status
+fatal: not a git repository (or any of the parent directories): .git
+maclab-103:Hansen-Erik hanse109$ pwd
+/Users/hanse109/PycharmProjects/Hansen-Erik
+maclab-103:Hansen-Erik hanse109$ cd .,
+-bash: cd: .,: No such file or directory
+maclab-103:Hansen-Erik hanse109$ cd ..
+maclab-103:PycharmProjects hanse109$ ls
+Hansen-Erik	untitled
+maclab-103:PycharmProjects hanse109$ rm -r Hansen-Erik/
+maclab-103:PycharmProjects hanse109$ cd ..
+maclab-103:~ hanse109$ cd PycharmProjects/
+maclab-103:PycharmProjects hanse109$ ls
+Hansen-Erik	untitled
+maclab-103:PycharmProjects hanse109$ 
