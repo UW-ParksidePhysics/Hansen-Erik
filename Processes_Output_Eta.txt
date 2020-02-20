@@ -1,0 +1,854 @@
+Last login: Thu Feb 20 14:12:20 on ttys000
+maclab-103:~ hanse109$ ps
+  PID TTY           TIME CMD
+21897 ttys001    0:00.01 -bash
+maclab-103:~ hanse109$ ps x
+  PID   TT  STAT      TIME COMMAND
+ 4691   ??  S      0:00.27 /System/Library/Frameworks/LocalAuthentication.frame
+ 4692   ??  S      0:03.16 /usr/sbin/cfprefsd agent
+ 4715   ??  S      0:01.37 /usr/sbin/distnoted agent
+ 4719   ??  S      0:01.60 /usr/libexec/lsd
+ 4752   ??  S      0:00.31 /System/Library/PrivateFrameworks/IMDPersistence.fra
+ 4806   ??  S      0:02.64 /usr/libexec/pkd
+ 4871   ??  S      0:00.23 /System/Library/StagedFrameworks/Safari/SafariShared
+ 4880   ??  S      0:00.14 /System/Library/Frameworks/ApplicationServices.frame
+ 4926   ??  S      0:00.08 /System/Library/CoreServices/Menu Extras/SafeEjectGP
+ 4951   ??  S      0:00.15 /System/Library/PrivateFrameworks/CloudPhotoServices
+ 5060   ??  S      0:00.07 /System/Library/Frameworks/MediaAccessibility.framew
+ 5144   ??  S      0:00.13 /System/Library/Frameworks/CoreServices.framework/Ve
+ 5170   ??  S      0:00.13 /System/Library/PrivateFrameworks/ContextKit.framewo
+ 5803   ??  S      0:00.07 /System/Library/Frameworks/CryptoTokenKit.framework/
+ 5948   ??  S      0:01.90 /usr/libexec/secinitd
+ 6588   ??  S      0:00.58 /System/Library/Frameworks/ApplicationServices.frame
+ 6591   ??  Ss     0:00.01 /System/Library/Frameworks/AudioToolbox.framework/XP
+20623   ??  S      0:00.45 /usr/libexec/UserEventAgent (Aqua)
+20627   ??  S      0:00.30 /usr/sbin/universalaccessd launchd -s
+20629   ??  S      0:00.38 /System/Library/Frameworks/CoreTelephony.framework/S
+20630   ??  S      0:01.80 /usr/libexec/trustd --agent
+20631   ??  S      0:00.12 /usr/libexec/secd
+20642   ??  S      0:00.16 /System/Library/PrivateFrameworks/TelephonyUtilities
+20643   ??  S      0:02.36 /System/Library/PrivateFrameworks/CloudKitDaemon.fra
+20645   ??  S      0:00.58 /System/Library/Frameworks/Accounts.framework/Versio
+20646   ??  S      0:00.17 /System/Library/PrivateFrameworks/IDS.framework/iden
+20647   ??  S      0:00.02 /System/Library/Frameworks/Security.framework/Versio
+20653   ??  S      0:00.16 /System/Library/PrivateFrameworks/TCC.framework/Reso
+20654   ??  S      0:00.15 /System/Library/PrivateFrameworks/IMCore.framework/i
+20656   ??  S      0:00.31 /usr/libexec/nsurlsessiond
+20663   ??  S      0:00.08 /System/Library/Frameworks/AddressBook.framework/Exe
+20668   ??  S      0:00.06 /usr/libexec/rapportd
+20669   ??  S      0:00.19 /usr/sbin/usernoted
+20675   ??  S      0:00.62 /System/Library/CoreServices/NotificationCenter.app/
+20676   ??  Ss     0:00.05 /System/Library/PrivateFrameworks/IMFoundation.frame
+20677   ??  S      0:00.14 /System/Library/PrivateFrameworks/MessagesKit.framew
+20679   ??  S      0:01.15 /usr/libexec/nsurlstoraged
+20680   ??  S      0:00.07 /usr/libexec/fmfd
+20681   ??  S      0:00.05 /usr/libexec/pboard
+20682   ??  S      0:00.09 /System/Library/PrivateFrameworks/UserActivity.frame
+20683   ??  Ss     0:00.05 /System/Library/PrivateFrameworks/IMFoundation.frame
+20684   ??  S      0:00.32 /usr/libexec/sharingd
+20685   ??  S      0:00.16 /System/Library/PrivateFrameworks/ViewBridge.framewo
+20686   ??  Ss     0:00.02 /System/Library/PrivateFrameworks/IMFoundation.frame
+20688   ??  S      0:00.19 /System/Library/CoreServices/talagent
+20689   ??  S      0:00.72 /System/Library/Frameworks/ApplicationServices.frame
+20691   ??  S      0:00.35 /usr/libexec/routined LAUNCHED_BY_LAUNCHD
+20693   ??  S      0:00.04 /System/Library/PrivateFrameworks/FamilyCircle.frame
+20695   ??  S      0:00.14 /System/Library/CoreServices/sharedfilelistd
+20699   ??  S      0:00.17 /System/Library/CoreServices/CoreLocationAgent.app/C
+20704   ??  Ss     0:00.06 /System/Library/PrivateFrameworks/IMFoundation.frame
+20710   ??  S      0:00.11 /System/Library/PrivateFrameworks/AuthKit.framework/
+20713   ??  S      0:00.03 /usr/libexec/networkserviceproxy
+20714   ??  S      0:00.52 /System/Library/PrivateFrameworks/CalendarAgent.fram
+20715   ??  S      0:00.01 /System/Library/CoreServices/APFSUserAgent
+20716   ??  S      0:00.38 /System/Library/CoreServices/iconservicesagent
+20718   ??  S      0:00.12 /System/Library/CoreServices/WiFiAgent.app/Contents/
+20720   ??  Ss     0:00.16 /System/Library/PrivateFrameworks/CalendarNotificati
+20721   ??  S      0:00.07 /System/Library/PrivateFrameworks/CommerceKit.framew
+20723   ??  S      0:00.32 /System/Library/PrivateFrameworks/GeoServices.framew
+20724   ??  S      0:00.50 /System/Library/PrivateFrameworks/CoreSuggestions.fr
+20725   ??  S      0:00.07 /System/Library/CoreServices/mapspushd
+20727   ??  S      0:00.04 /System/Library/CoreServices/backgroundtaskmanagemen
+20729   ??  S      0:00.94 /System/Library/PrivateFrameworks/CommerceKit.framew
+20731   ??  S      0:00.63 /System/Library/PrivateFrameworks/AssistantServices.
+20732   ??  S      0:00.08 /System/Library/PrivateFrameworks/CloudDocsDaemon.fr
+20733   ??  S      0:00.07 /usr/libexec/swcd
+20747   ??  S      1:07.00 /Applications/Safari.app/Contents/MacOS/Safari -psn_
+20750   ??  S      0:01.85 /Applications/Utilities/Terminal.app/Contents/MacOS/
+20751   ??  T      0:00.01 /Applications/Microsoft Word.app/Contents/MacOS/Micr
+20756   ??  S      0:01.37 /System/Library/CoreServices/Dock.app/Contents/MacOS
+20757   ??  S      0:00.50 /System/Library/CoreServices/SystemUIServer.app/Cont
+20758   ??  S      0:10.80 /System/Library/CoreServices/Finder.app/Contents/Mac
+20763   ??  S      0:02.41 /System/Library/CoreServices/Spotlight.app/Contents/
+20766   ??  Ss     0:00.13 /System/Library/Frameworks/VideoToolbox.framework/Ve
+20768   ??  S      0:00.74 /System/Library/PrivateFrameworks/CoreParsec.framewo
+20772   ??  Ss     0:00.04 /System/Library/PrivateFrameworks/CoreWLANKit.framew
+20773   ??  Ss     0:00.01 /System/Library/PrivateFrameworks/login.framework/Ve
+20777   ??  S      0:00.49 /System/Library/CoreServices/CoreServicesUIAgent.app
+20782   ??  Ss     0:03.25 /System/Library/StagedFrameworks/Safari/WebKit.frame
+20784   ??  S      0:00.17 /usr/libexec/videosubscriptionsd
+20785   ??  S      0:00.07 /System/Library/CoreServices/SafariSupport.bundle/Co
+20786   ??  S      0:00.62 /System/Library/CoreServices/SafariSupport.bundle/Co
+20788   ??  S      0:00.05 /System/Library/CoreServices/pbs
+20790   ??  S      0:02.84 /System/Library/PrivateFrameworks/CacheDelete.framew
+20792   ??  S      0:00.17 /usr/libexec/adprivacyd
+20800   ??  S      0:00.17 /System/Library/CoreServices/diagnostics_agent
+20801   ??  S      0:00.35 /System/Library/CoreServices/cloudphotosd.app/Conten
+20803   ??  S      0:00.16 /System/Library/PrivateFrameworks/CommerceKit.framew
+20805   ??  S      0:00.05 /System/Library/PrivateFrameworks/QuickLookThumbnail
+20808   ??  Ss     0:00.19 /System/Library/CoreServices/Dock.app/Contents/XPCSe
+20811   ??  S      0:00.02 /System/Library/PrivateFrameworks/CallHistory.framew
+20816   ??  Ss     0:00.03 /System/Library/PrivateFrameworks/AssistantServices.
+20817   ??  S      0:00.01 SafeEjectGPUAgent
+20830   ??  Ss     0:00.04 /System/Library/Frameworks/iTunesLibrary.framework/V
+20840   ??  S      0:00.07 /System/Library/PrivateFrameworks/PhotoLibraryPrivat
+20841   ??  Ss     0:00.36 /System/Library/Frameworks/MediaLibrary.framework/Ve
+20845   ??  S      0:00.15 /System/Library/Frameworks/AudioToolbox.framework/Au
+20856   ??  Ss     0:00.02 /System/Library/Frameworks/AudioToolbox.framework/XP
+20857   ??  S      0:01.93 /System/Library/PrivateFrameworks/AssistantServices.
+20859   ??  S      0:00.13 /System/Library/PrivateFrameworks/AssetCacheServices
+20863   ??  Ss     0:00.06 /System/Library/Frameworks/iTunesLibrary.framework/V
+20870   ??  S      0:00.06 /usr/libexec/siriknowledged
+20871   ??  Ss     0:00.05 /System/Library/PrivateFrameworks/FMClient.framework
+20873   ??  S      0:00.23 /System/Library/Frameworks/CoreServices.framework/Fr
+20879   ??  S      0:51.33 /Applications/PyCharm CE.app/Contents/MacOS/pycharm 
+20880   ??  Ss     0:05.18 /System/Library/PrivateFrameworks/XprotectFramework.
+20881   ??  S      0:00.02 /System/Library/PrivateFrameworks/CoreSpeech.framewo
+20885   ??  S      0:00.02 /System/Library/CoreServices/SocialPushAgent.app/Con
+20887   ??  SN     0:00.10 /usr/local/jamf/bin/jamfAgent
+20888   ??  S      0:00.03 /usr/libexec/dmd
+20889   ??  S      0:00.10 /System/Library/Frameworks/InputMethodKit.framework/
+20890   ??  S      0:00.29 /System/Library/CoreServices/Siri.app/Contents/MacOS
+20891   ??  S      0:00.08 /System/Library/Image Capture/Support/icdd
+20894   ??  S      0:00.14 /Library/Application Support/Pharos/Notify.app/Conte
+20895   ??  S      0:00.13 /System/Library/CoreServices/AirPlayUIAgent.app/Cont
+20896   ??  S      0:00.07 /usr/libexec/knowledge-agent
+20897   ??  S      0:00.06 /System/Library/CoreServices/cloudpaird
+20898   ??  S      0:03.78 /Applications/Utilities/Adobe Creative Cloud/ACC/Cre
+20899   ??  S      0:00.27 /System/Library/PrivateFrameworks/Noticeboard.framew
+20900   ??  S      0:11.71 /Library/Application Support/Malwarebytes/Malwarebyt
+20902   ??  S      0:00.02 /System/Library/Frameworks/CryptoTokenKit.framework/
+20909   ??  S      0:00.92 /Library/Application Support/Adobe/Adobe Desktop Com
+20910   ??  S      0:13.02 /Applications/Utilities/Adobe Creative Cloud/ACC/Cre
+20912   ??  Ss     0:00.04 /System/Library/Frameworks/VideoToolbox.framework/Ve
+20913   ??  S      0:04.59 /Library/Application Support/Adobe/Adobe Desktop Com
+20915   ??  S      0:01.75 /Applications/Utilities/Adobe Creative Cloud/ACC/Cre
+20917   ??  S      0:00.42 /Applications/Utilities/Adobe Creative Cloud/ACC/Cre
+20919   ??  S      0:01.74 /Library/Application Support/Adobe/Adobe Desktop Com
+20921   ??  S      0:00.75 /Library/Application Support/Adobe/Creative Cloud Li
+20925   ??  S      0:00.02 /System/Library/Frameworks/ColorSync.framework/Suppo
+20928   ??  S      0:18.36 /Applications/Utilities/Adobe Creative Cloud/ACC/Cre
+20937   ??  S      0:00.50 /Applications/Utilities/Adobe Sync/CoreSync/Core Syn
+20938   ??  S      0:00.62 /Applications/Utilities/Adobe Creative Cloud Experie
+20939   ??  S      0:02.10 /Applications/Utilities/Adobe Sync/CoreSync/Core Syn
+20942   ??  S      0:02.74 /System/Library/PrivateFrameworks/SafariSafeBrowsing
+20958   ??  Ss     0:00.18 /System/Library/StagedFrameworks/Safari/SafariShared
+20972   ??  Ss     0:00.04 /System/Library/Frameworks/Metal.framework/Versions/
+21019   ??  S      0:00.03 /System/Library/CoreServices/Software Update.app/Con
+21022   ??  S      0:00.03 /System/Library/PrivateFrameworks/CommerceKit.framew
+21023   ??  S      0:00.26 /System/Library/PrivateFrameworks/CommerceKit.framew
+21024   ??  S      0:00.12 /System/Library/PrivateFrameworks/CommerceKit.framew
+21025   ??  Ss     0:00.03 /System/Library/PrivateFrameworks/CommerceKit.framew
+21043   ??  S      0:00.09 /Applications/PyCharm CE.app/Contents/bin/fsnotifier
+21051   ??  Ss     1:32.00 /System/Library/StagedFrameworks/Safari/WebKit.frame
+21061   ??  S      0:00.53 /System/Library/Services/AppleSpell.service/Contents
+21062   ??  S      0:00.12 /usr/libexec/keyboardservicesd
+21071   ??  S      0:00.05 /System/Library/CoreServices/EscrowSecurityAlert.app
+21074   ??  Ss     0:00.52 /System/Library/StagedFrameworks/Safari/WebKit.frame
+21078   ??  Ss     0:00.75 /System/Library/StagedFrameworks/Safari/WebKit.frame
+21081   ??  Ss     0:00.18 /System/Library/StagedFrameworks/Safari/WebKit.frame
+21082   ??  Ss     0:00.09 /System/Library/Frameworks/Metal.framework/Versions/
+21094   ??  Ss     0:00.13 /System/Library/Frameworks/Metal.framework/Versions/
+21108   ??  Ss     0:00.14 /System/Library/CoreServices/Siri.app/Contents/XPCSe
+21113   ??  S      0:00.06 /System/Library/PrivateFrameworks/PhotoAnalysis.fram
+21114   ??  S      0:00.08 /System/Library/PrivateFrameworks/IMDPersistence.fra
+21115   ??  S      0:00.06 /System/Library/PrivateFrameworks/UsageTracking.fram
+21119   ??  S      0:00.13 /usr/libexec/silhouette
+21120   ??  S      0:00.47 /System/Library/PrivateFrameworks/AppStoreDaemon.fra
+21134   ??  S      0:00.03 /System/Library/PrivateFrameworks/CoreFollowUp.frame
+21197   ??  S      0:00.02 /System/Library/PrivateFrameworks/PrintingPrivate.fr
+21227   ??  S      0:00.22 /System/Library/Frameworks/ApplicationServices.frame
+21265   ??  Ss     0:00.17 /System/Library/PrivateFrameworks/CommerceKit.framew
+21266   ??  Ss     0:00.06 /System/Library/Frameworks/Metal.framework/Versions/
+21373   ??  Ss     0:00.05 /System/Library/Frameworks/Metal.framework/Versions/
+21404   ??  S      0:00.46 /Applications/TextEdit.app/Contents/MacOS/TextEdit
+21405   ??  S      0:00.01 /System/Library/Frameworks/CoreServices.framework/Fr
+21406   ??  Ss     0:00.09 /System/Library/Frameworks/Metal.framework/Versions/
+21678   ??  S      0:00.05 /System/Library/Frameworks/CoreServices.framework/Fr
+21784   ??  S      0:00.05 /System/Library/Frameworks/CoreServices.framework/Fr
+21896 s001  Ss     0:00.02 login -pf hanse109
+21897 s001  S      0:00.01 -bash
+21915 s001  R+     0:00.00 ps x
+maclab-103:~ hanse109$ ps aux
+USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+_windowserver     2735   1.3  1.3  9217076 223724   ??  Ss   12Feb20  23:18.71 /System/Library/
+hanse109         20928   0.7  0.8  4887828 138380   ??  S     2:00PM   0:18.54 /Applications/Ut
+hanse109         20750   0.6  0.8  5025664 127940   ??  S     2:00PM   0:02.17 /Applications/Ut
+hanse109         20910   0.4  0.4  4685072  61564   ??  S     2:00PM   0:13.15 /Applications/Ut
+hanse109         20890   0.1  0.2  4365892  31988   ??  S     2:00PM   0:00.30 /System/Library/
+_hidd              124   0.1  0.0  4330540   7860   ??  Ss   12Feb20   3:25.35 /usr/libexec/hid
+hanse109         21784   0.0  0.1  4339988  13824   ??  S     2:37PM   0:00.05 /System/Library/
+delun002         21783   0.0  0.1  4342152  13708   ??  S     2:37PM   0:00.05 /System/Library/
+hanse109         21678   0.0  0.1  4339988  14720   ??  S     2:36PM   0:00.05 /System/Library/
+hanse109         21406   0.0  0.1  4845212  17172   ??  Ss    2:27PM   0:00.09 /System/Library/
+hanse109         21405   0.0  0.0  4327764   6728   ??  S     2:27PM   0:00.01 /System/Library/
+hanse109         21404   0.0  0.3  4958748  43924   ??  S     2:27PM   0:00.46 /Applications/Te
+hanse109         21373   0.0  0.1  4827768  15340   ??  Ss    2:25PM   0:00.05 /System/Library/
+hanse109         21266   0.0  0.1  4835852  12260   ??  Ss    2:12PM   0:00.06 /System/Library/
+hanse109         21265   0.0  0.1  4363908  19716   ??  Ss    2:12PM   0:00.18 /System/Library/
+hanse109         21227   0.0  0.1  4361912   9172   ??  S     2:05PM   0:00.22 /System/Library/
+hanse109         21197   0.0  0.1  4310484  16028   ??  S     2:04PM   0:00.02 /System/Library/
+hanse109         21134   0.0  0.1  4327436   9656   ??  S     2:03PM   0:00.03 /System/Library/
+hanse109         21120   0.0  0.1  4361444  21952   ??  S     2:02PM   0:00.47 /System/Library/
+hanse109         21119   0.0  0.1  4328860  15700   ??  S     2:02PM   0:00.13 /usr/libexec/sil
+hanse109         21115   0.0  0.1  4355548  12164   ??  S     2:02PM   0:00.06 /System/Library/
+hanse109         21114   0.0  0.1  4354724  19388   ??  S     2:01PM   0:00.08 /System/Library/
+hanse109         21113   0.0  0.2  4345664  28352   ??  S     2:01PM   0:00.06 /System/Library/
+hanse109         21108   0.0  0.2  4882640  31712   ??  Ss    2:01PM   0:00.14 /System/Library/
+hanse109         21094   0.0  0.1  4837532  16872   ??  Ss    2:01PM   0:00.13 /System/Library/
+hanse109         21082   0.0  0.1  4845780  17784   ??  Ss    2:01PM   0:00.09 /System/Library/
+hanse109         21081   0.0  0.3 106203140  44548   ??  Ss    2:01PM   0:00.18 /System/Library/
+hanse109         21078   0.0  0.5 89465440  78252   ??  Ss    2:01PM   0:00.75 /System/Library/
+hanse109         21074   0.0  0.5 106253236  82072   ??  Ss    2:01PM   0:00.52 /System/Library/
+hanse109         21071   0.0  0.2  4327268  27116   ??  S     2:00PM   0:00.05 /System/Library/
+dittb001         21068   0.0  0.1  4360060  10640   ??  S     2:00PM   0:00.19 /usr/libexec/tru
+thoma130         21067   0.0  0.1  4358016  10856   ??  S     2:00PM   0:00.19 /usr/libexec/tru
+herro009         21066   0.0  0.1  4360304  10984   ??  S     2:00PM   0:00.21 /usr/libexec/tru
+highm003         21065   0.0  0.1  4358024  10684   ??  S     2:00PM   0:00.19 /usr/libexec/tru
+avalo007         21064   0.0  0.1  4358004  10652   ??  S     2:00PM   0:00.19 /usr/libexec/tru
+gullo003         21063   0.0  0.1  4360260  10788   ??  S     2:00PM   0:00.19 /usr/libexec/tru
+hanse109         21062   0.0  0.1  4360848  17504   ??  S     2:00PM   0:00.12 /usr/libexec/key
+hanse109         21061   0.0  0.3  4417904  47168   ??  S     2:00PM   0:00.53 /System/Library/
+hanse109         21051   0.0  2.2 106820656 375404   ??  Ss    2:00PM   1:32.02 /System/Library/
+hanse109         21043   0.0  0.0  4310972   4968   ??  S     2:00PM   0:00.09 /Applications/Py
+hanse109         21025   0.0  0.1  4331520  14788   ??  Ss    2:00PM   0:00.03 /System/Library/
+hanse109         21024   0.0  0.1  4365804  22476   ??  S     2:00PM   0:00.12 /System/Library/
+hanse109         21023   0.0  0.1  4366316  23344   ??  S     2:00PM   0:00.26 /System/Library/
+hanse109         21022   0.0  0.1  4355028  17628   ??  S     2:00PM   0:00.03 /System/Library/
+hanse109         21019   0.0  0.1  4328468  13236   ??  S     2:00PM   0:00.03 /System/Library/
+hanse109         20972   0.0  0.1  4846560  16136   ??  Ss    2:00PM   0:00.04 /System/Library/
+hanse109         20958   0.0  0.2  4457340  35060   ??  Ss    2:00PM   0:00.18 /System/Library/
+hanse109         20942   0.0  0.2  4382312  29240   ??  S     2:00PM   0:02.74 /System/Library/
+hanse109         20939   0.0  0.1  4354904  10784   ??  S     2:00PM   0:02.12 /Applications/Ut
+hanse109         20938   0.0  0.3  5007584  50976   ??  S     2:00PM   0:00.62 /Applications/Ut
+hanse109         20937   0.0  0.2  4951268  28792   ??  S     2:00PM   0:00.51 /Applications/Ut
+hanse109         20925   0.0  0.0  4311488   6384   ??  S     2:00PM   0:00.02 /System/Library/
+hanse109         20921   0.0  0.4  5028000  58928   ??  S     2:00PM   0:00.75 /Library/Applica
+hanse109         20919   0.0  0.1  4354904  10732   ??  S     2:00PM   0:01.76 /Library/Applica
+hanse109         20917   0.0  0.5  4805096  80580   ??  S     2:00PM   0:00.42 /Applications/Ut
+hanse109         20915   0.0  0.1  4354904  10768   ??  S     2:00PM   0:01.77 /Applications/Ut
+hanse109         20913   0.0  1.0  5623812 161008   ??  S     2:00PM   0:04.60 /Library/Applica
+hanse109         20912   0.0  0.0  4355660   8328   ??  Ss    2:00PM   0:00.04 /System/Library/
+hanse109         20909   0.0  0.1  4369792  15360   ??  S     2:00PM   0:00.93 /Library/Applica
+hanse109         20902   0.0  0.1  4328584  10944   ??  S     2:00PM   0:00.02 /System/Library/
+hanse109         20900   0.0  0.2  4396412  35448   ??  S     2:00PM   0:11.83 /Library/Applica
+hanse109         20899   0.0  0.1  4368560  22680   ??  S     2:00PM   0:00.27 /System/Library/
+hanse109         20898   0.0  0.4  4720280  60504   ??  S     2:00PM   0:03.81 /Applications/Ut
+hanse109         20897   0.0  0.1  4355444  21264   ??  S     2:00PM   0:00.06 /System/Library/
+hanse109         20896   0.0  0.1  4359328  16428   ??  S     2:00PM   0:00.07 /usr/libexec/kno
+hanse109         20895   0.0  0.1  4873956  14936   ??  S     2:00PM   0:00.13 /System/Library/
+hanse109         20894   0.0  0.1  4381796  17540   ??  S     2:00PM   0:00.14 /Library/Applica
+hanse109         20891   0.0  0.1  4356276  17068   ??  S     2:00PM   0:00.08 /System/Library/
+hanse109         20889   0.0  0.1  4357580  12408   ??  S     2:00PM   0:00.10 /System/Library/
+hanse109         20888   0.0  0.1  4355228  18068   ??  S     2:00PM   0:00.03 /usr/libexec/dmd
+hanse109         20887   0.0  0.1  4355080  11688   ??  SN    2:00PM   0:00.10 /usr/local/jamf/
+hanse109         20885   0.0  0.1  4353896  13496   ??  S     2:00PM   0:00.02 /System/Library/
+hanse109         20881   0.0  0.1  4309960  17068   ??  S     2:00PM   0:00.02 /System/Library/
+hanse109         20880   0.0  0.2  4359588  25640   ??  Ss    2:00PM   0:05.18 /System/Library/
+hanse109         20879   0.0  3.6  9070096 595712   ??  S     2:00PM   0:51.34 /Applications/Py
+hanse109         20873   0.0  0.2  4520280  36108   ??  S     2:00PM   0:00.23 /System/Library/
+hanse109         20871   0.0  0.1  4354520  11800   ??  Ss    2:00PM   0:00.05 /System/Library/
+hanse109         20870   0.0  0.1  4354620  14272   ??  S     2:00PM   0:00.06 /usr/libexec/sir
+hanse109         20863   0.0  0.1  4356624  11724   ??  Ss    2:00PM   0:00.06 /System/Library/
+hanse109         20859   0.0  0.1  4359348  10248   ??  S     2:00PM   0:00.13 /System/Library/
+hanse109         20857   0.0  0.3  4364508  42668   ??  S     2:00PM   0:01.93 /System/Library/
+hanse109         20856   0.0  0.1  4302064   9200   ??  Ss    2:00PM   0:00.02 /System/Library/
+hanse109         20845   0.0  0.1  4356212   9472   ??  S     2:00PM   0:00.15 /System/Library/
+hanse109         20841   0.0  0.2  4405360  34564   ??  Ss    2:00PM   0:00.36 /System/Library/
+hanse109         20840   0.0  0.1  4359708  18540   ??  S     2:00PM   0:00.07 /System/Library/
+hanse109         20830   0.0  0.1  4356624  11772   ??  Ss    2:00PM   0:00.04 /System/Library/
+hanse109         20817   0.0  0.1  4821264   9040   ??  S     2:00PM   0:00.01 SafeEjectGPUAgen
+hanse109         20816   0.0  0.1  4327384  15396   ??  Ss    2:00PM   0:00.03 /System/Library/
+hanse109         20811   0.0  0.1  4329940  10920   ??  S     2:00PM   0:00.02 /System/Library/
+hanse109         20808   0.0  0.2  4877508  31896   ??  Ss    2:00PM   0:00.19 /System/Library/
+hanse109         20805   0.0  0.0  4354076   7592   ??  S     2:00PM   0:00.05 /System/Library/
+hanse109         20803   0.0  0.1  4360756  18376   ??  S     2:00PM   0:00.16 /System/Library/
+hanse109         20801   0.0  0.2  4392152  34376   ??  S     2:00PM   0:00.35 /System/Library/
+hanse109         20800   0.0  0.1  4359072  23352   ??  S     2:00PM   0:00.17 /System/Library/
+hanse109         20792   0.0  0.1  4359272  21192   ??  S     2:00PM   0:00.17 /usr/libexec/adp
+hanse109         20790   0.0  0.1  4356528   9924   ??  S     2:00PM   0:02.84 /System/Library/
+hanse109         20788   0.0  0.0  4358456   8192   ??  S     2:00PM   0:00.05 /System/Library/
+hanse109         20786   0.0  0.2  4474304  39864   ??  S     2:00PM   0:00.62 /System/Library/
+hanse109         20785   0.0  0.2  4472252  37336   ??  S     2:00PM   0:00.07 /System/Library/
+hanse109         20784   0.0  0.1  4356452  13512   ??  S     2:00PM   0:00.17 /usr/libexec/vid
+hanse109         20782   0.0  0.3  4484168  48816   ??  Ss    2:00PM   0:03.28 /System/Library/
+hanse109         20777   0.0  0.2  4397664  27640   ??  S     2:00PM   0:00.49 /System/Library/
+hanse109         20773   0.0  0.0  4327636   5100   ??  Ss    2:00PM   0:00.01 /System/Library/
+hanse109         20772   0.0  0.1  4354300  13632   ??  Ss    2:00PM   0:00.04 /System/Library/
+hanse109         20768   0.0  0.2  4368068  26064   ??  S     2:00PM   0:00.74 /System/Library/
+hanse109         20766   0.0  0.1  4394220  22080   ??  Ss    2:00PM   0:00.13 /System/Library/
+hanse109         20763   0.0  0.5  5018424  84648   ??  S     2:00PM   0:02.41 /System/Library/
+hanse109         20758   0.0  1.1  5541280 184432   ??  S     2:00PM   0:10.80 /System/Library/
+hanse109         20757   0.0  0.3  4916740  45108   ??  S     2:00PM   0:00.50 /System/Library/
+hanse109         20756   0.0  1.0  5046192 175836   ??  S     2:00PM   0:01.37 /System/Library/
+hanse109         20751   0.0  0.0  4299552     24   ??  T     2:00PM   0:00.01 /Applications/Mi
+hanse109         20747   0.0  0.7  6574636 117516   ??  S     2:00PM   1:07.00 /Applications/Sa
+hanse109         20733   0.0  0.1  4355892   9164   ??  S     2:00PM   0:00.07 /usr/libexec/swc
+hanse109         20732   0.0  0.1  4355032  17548   ??  S     2:00PM   0:00.08 /System/Library/
+hanse109         20731   0.0  0.2  4375500  35912   ??  S     2:00PM   0:00.63 /System/Library/
+hanse109         20729   0.0  0.2  4367460  26020   ??  S     2:00PM   0:00.94 /System/Library/
+hanse109         20727   0.0  0.0  4355340   8088   ??  S     2:00PM   0:00.04 /System/Library/
+hanse109         20725   0.0  0.1  4355720  18712   ??  S     2:00PM   0:00.07 /System/Library/
+hanse109         20724   0.0  0.3  4421812  42212   ??  S     2:00PM   0:00.50 /System/Library/
+hanse109         20723   0.0  0.1  4367208  19576   ??  S     2:00PM   0:00.32 /System/Library/
+hanse109         20721   0.0  0.1  4329024  18404   ??  S     2:00PM   0:00.07 /System/Library/
+hanse109         20720   0.0  0.2  4360432  33576   ??  Ss    2:00PM   0:00.16 /System/Library/
+hanse109         20718   0.0  0.1  4361968  14448   ??  S     2:00PM   0:00.12 /System/Library/
+hanse109         20716   0.0  0.1  4385444  14740   ??  S     2:00PM   0:00.38 /System/Library/
+hanse109         20715   0.0  0.0  4319588   5796   ??  S     2:00PM   0:00.01 /System/Library/
+hanse109         20714   0.0  0.2  4362836  39704   ??  S     2:00PM   0:00.52 /System/Library/
+hanse109         20713   0.0  0.1  4355796  11940   ??  S     2:00PM   0:00.03 /usr/libexec/net
+hanse109         20710   0.0  0.1  4358016   9936   ??  S     2:00PM   0:00.11 /System/Library/
+hanse109         20704   0.0  0.1  4355280  12760   ??  Ss    2:00PM   0:00.06 /System/Library/
+hanse109         20699   0.0  0.1  4368064  16188   ??  S     2:00PM   0:00.17 /System/Library/
+hanse109         20695   0.0  0.1  4356020   9448   ??  S     2:00PM   0:00.14 /System/Library/
+hanse109         20693   0.0  0.1  4354624  18512   ??  S     2:00PM   0:00.04 /System/Library/
+hanse109         20691   0.0  0.2  4363244  38848   ??  S     2:00PM   0:00.35 /usr/libexec/rou
+hanse109         20689   0.0  0.1  4357384  13692   ??  S     2:00PM   0:00.72 /System/Library/
+hanse109         20688   0.0  0.1  4378812  18680   ??  S     2:00PM   0:00.19 /System/Library/
+hanse109         20686   0.0  0.0  4327160   5632   ??  Ss    2:00PM   0:00.02 /System/Library/
+hanse109         20685   0.0  0.1  4354984  12388   ??  S     2:00PM   0:00.16 /System/Library/
+hanse109         20684   0.0  0.2  4364316  34916   ??  S     2:00PM   0:00.32 /usr/libexec/sha
+hanse109         20683   0.0  0.1  4355280  12620   ??  Ss    2:00PM   0:00.05 /System/Library/
+hanse109         20682   0.0  0.1  4356564  11120   ??  S     2:00PM   0:00.10 /System/Library/
+hanse109         20681   0.0  0.0  4328280   7736   ??  S     2:00PM   0:00.05 /usr/libexec/pbo
+hanse109         20680   0.0  0.1  4355852  23052   ??  S     2:00PM   0:00.07 /usr/libexec/fmf
+hanse109         20679   0.0  0.1  4361348  15248   ??  S     2:00PM   0:01.16 /usr/libexec/nsu
+hanse109         20677   0.0  0.2  4359992  33968   ??  S     2:00PM   0:00.14 /System/Library/
+hanse109         20676   0.0  0.1  4355344  12920   ??  Ss    2:00PM   0:00.05 /System/Library/
+hanse109         20675   0.0  0.4  4932140  62636   ??  S     2:00PM   0:00.62 /System/Library/
+hanse109         20669   0.0  0.1  4357272  17308   ??  S     2:00PM   0:00.19 /usr/sbin/userno
+hanse109         20668   0.0  0.1  4355488  19056   ??  S     2:00PM   0:00.06 /usr/libexec/rap
+hanse109         20663   0.0  0.1  4327352  18352   ??  S     2:00PM   0:00.08 /System/Library/
+hanse109         20656   0.0  0.1  4359624  19148   ??  S     2:00PM   0:00.31 /usr/libexec/nsu
+hanse109         20654   0.0  0.1  4355748  22904   ??  S     2:00PM   0:00.15 /System/Library/
+hanse109         20653   0.0  0.1  4359992  10704   ??  S     2:00PM   0:00.16 /System/Library/
+hanse109         20647   0.0  0.0  4327508   6340   ??  S     2:00PM   0:00.02 /System/Library/
+hanse109         20646   0.0  0.1  4364604  19652   ??  S     2:00PM   0:00.17 /System/Library/
+hanse109         20645   0.0  0.1  4358296   8960   ??  S     2:00PM   0:00.58 /System/Library/
+hanse109         20643   0.0  0.2  4368920  37392   ??  S     2:00PM   0:02.36 /System/Library/
+hanse109         20642   0.0  0.2  4363156  32736   ??  S     2:00PM   0:00.16 /System/Library/
+hanse109         20631   0.0  0.1  4358800  15088   ??  S     2:00PM   0:00.12 /usr/libexec/sec
+hanse109         20630   0.0  0.2  4382604  31928   ??  S     2:00PM   0:01.81 /usr/libexec/tru
+hanse109         20629   0.0  0.2  4368180  34188   ??  S     2:00PM   0:00.38 /System/Library/
+hanse109         20627   0.0  0.1  4362064  13132   ??  S     2:00PM   0:00.30 /usr/sbin/univer
+hanse109         20623   0.0  0.2  4357160  36388   ??  S     2:00PM   0:00.45 /usr/libexec/Use
+root             20350   0.0  0.1  4355036  11300   ??  Ss   10:24AM   0:00.13 /System/Library/
+hanse109         20340   0.0  0.5  4451632  87232   ??  S    10:24AM   0:01.11 /System/Library/
+delun002         20236   0.0  0.1  4377648  16076   ??  S    10:22AM   0:00.17 /System/Library/
+delun002         20230   0.0  0.2  4885740  32588   ??  Ss   10:22AM   0:00.25 /System/Library/
+_cmiodalassistants 20225   0.0  0.0  4355644   8180   ??  Ss   10:21AM   0:00.04 /System/Library/
+thoma130         20223   0.0  0.0  4318432   4972   ??  S    10:21AM   0:00.01 /System/Library/
+thoma130         20145   0.0  0.1  4355080  10472   ??  S    10:21AM   0:00.02 /System/Library/
+thoma130         20106   0.0  0.1  4329020  10800   ??  S    10:21AM   0:00.02 /System/Library/
+thoma130         20067   0.0  0.1  4319496  12496   ??  S    10:21AM   0:00.02 /System/Library/
+delun002         20066   0.0  0.2  4378572  33352   ??  S    10:21AM   0:00.32 /System/Library/
+thoma130         20061   0.0  0.1  4361708  17872   ??  S    10:21AM   0:00.95 /System/Library/
+thoma130         19996   0.0  0.1  4354252  23120   ??  S    10:20AM   0:00.04 /System/Library/
+thoma130         19970   0.0  0.1  4358256  14200   ??  S    10:20AM   0:02.28 /usr/libexec/pkd
+thoma130         19907   0.0  0.1  4354528   8560   ??  S    10:20AM   0:00.11 /System/Library/
+root             19885   0.0  0.1  4355256  18280   ??  Ss   10:20AM   0:00.05 /usr/libexec/dmd
+delun002         19872   0.0  0.1  4370232  19396   ??  S    10:20AM   0:00.34 /System/Library/
+delun002         19870   0.0  0.4  4960156  59828   ??  S    10:20AM   0:00.65 /System/Library/
+delun002         19860   0.0  0.2  4369836  34688   ??  S    10:20AM   0:00.46 /usr/libexec/sha
+delun002         19845   0.0  0.1  4355032  17576   ??  S    10:20AM   0:00.10 /System/Library/
+delun002         19844   0.0  0.1  4357276  18084   ??  S    10:20AM   0:00.04 /usr/libexec/dmd
+thoma130         19842   0.0  0.1  4354680  18444   ??  S    10:20AM   0:00.06 /System/Library/
+delun002         19826   0.0  0.2  4405200  30804   ??  S    10:20AM   0:00.55 /usr/libexec/stu
+thoma130         19823   0.0  0.1  4362800  21852   ??  S    10:20AM   0:04.74 /usr/libexec/sec
+thoma130         19822   0.0  0.1  4357972  14580   ??  S    10:20AM   0:00.26 /usr/libexec/lan
+thoma130         19808   0.0  0.2  4368436  26264   ??  S    10:20AM   0:12.76 /usr/libexec/lsd
+thoma130         19799   0.0  0.0  4328420   4776   ??  S    10:20AM   0:00.30 /usr/sbin/distno
+thoma130         19770   0.0  0.0  4327720   3528   ??  S    10:20AM   0:00.75 /usr/sbin/cfpref
+thoma130         19769   0.0  0.1  4354188  10544   ??  S    10:20AM   0:00.03 /System/Library/
+highm003         18690   0.0  0.0  4327756   5528   ??  S    Wed02PM   0:00.02 /System/Library/
+highm003         18684   0.0  0.1  4456244  15344   ??  S    Wed02PM   0:00.07 /System/Library/
+highm003         18132   0.0  0.1  4353976  22960   ??  S    Wed01PM   0:00.06 /System/Library/
+highm003         18077   0.0  0.1  4355080  10448   ??  S    Wed01PM   0:00.03 /System/Library/
+highm003         18029   0.0  0.1  4329020  10836   ??  S    Wed01PM   0:00.03 /System/Library/
+highm003         17991   0.0  0.2  4455180  33636   ??  S    Wed01PM   0:00.13 /System/Library/
+highm003         17914   0.0  0.1  4358300  14300   ??  S    Wed01PM   0:01.01 /usr/libexec/pkd
+highm003         17869   0.0  0.1  4360616  13140   ??  S    Wed01PM   0:01.03 /usr/libexec/sec
+highm003         17863   0.0  0.1  4355364  18544   ??  S    Wed01PM   0:00.10 /System/Library/
+highm003         17830   0.0  0.1  4358976  11044   ??  S    Wed01PM   0:00.44 /usr/libexec/lsd
+highm003         17826   0.0  0.0  4328420   4892   ??  S    Wed01PM   0:00.46 /usr/sbin/distno
+highm003         17803   0.0  0.0  4327756   3444   ??  S    Wed01PM   0:01.00 /usr/sbin/cfpref
+highm003         17802   0.0  0.1  4354188  10956   ??  S    Wed01PM   0:00.04 /System/Library/
+avalo007         16055   0.0  0.1  4355080  10484   ??  S    Wed10AM   0:00.04 /System/Library/
+avalo007         16007   0.0  0.1  4329020  10832   ??  S    Wed10AM   0:00.03 /System/Library/
+avalo007         15975   0.0  0.1  4353976  22848   ??  S    Wed10AM   0:00.05 /System/Library/
+avalo007         15912   0.0  0.1  4358264  14156   ??  S    Wed10AM   0:00.96 /usr/libexec/pkd
+avalo007         15860   0.0  0.1  4356412  11264   ??  S    Wed10AM   0:00.19 /usr/libexec/sec
+avalo007         15853   0.0  0.1  4355040  17920   ??  S    Wed10AM   0:00.10 /System/Library/
+avalo007         15814   0.0  0.1  4360420  12428   ??  S    Wed10AM   0:00.28 /usr/libexec/lsd
+avalo007         15810   0.0  0.0  4328420   4680   ??  S    Wed10AM   0:00.25 /usr/sbin/distno
+avalo007         15787   0.0  0.0  4327724   3328   ??  S    Wed10AM   0:00.60 /usr/sbin/cfpref
+avalo007         15786   0.0  0.1  4354008  10204   ??  S    Wed10AM   0:00.03 /System/Library/
+dittb001         14355   0.0  0.1  4456244  13800   ??  S    Tue02PM   0:00.09 /System/Library/
+dittb001         14329   0.0  0.0  4327796   5976   ??  S    Tue02PM   0:00.19 /System/Library/
+dittb001         14323   0.0  0.2  4455180  33796   ??  S    Tue02PM   0:00.23 /System/Library/
+dittb001         14269   0.0  0.1  4355080  10460   ??  S    Tue02PM   0:00.04 /System/Library/
+dittb001         14244   0.0  0.1  4329020  10856   ??  S    Tue02PM   0:00.04 /System/Library/
+dittb001         14209   0.0  0.1  4327688  12560   ??  S    Tue02PM   0:00.04 /System/Library/
+dittb001         14114   0.0  0.1  4354252  23424   ??  S    Tue02PM   0:00.08 /System/Library/
+dittb001         14079   0.0  0.1  4358368  14192   ??  S    Tue02PM   0:02.93 /usr/libexec/pkd
+delun002         14043   0.0  0.3  4446820  52796   ??  S    Tue02PM   0:01.59 /System/Library/
+dittb001         14015   0.0  0.1  4354528   8708   ??  S    Tue02PM   0:00.16 /System/Library/
+dittb001         13951   0.0  0.1  4354680  18280   ??  S    Tue02PM   0:00.14 /System/Library/
+dittb001         13931   0.0  0.1  4360620  21876   ??  S    Tue02PM   0:05.01 /usr/libexec/sec
+dittb001         13929   0.0  0.1  4358996  15332   ??  S    Tue02PM   0:00.28 /usr/libexec/lan
+dittb001         13911   0.0  0.2  4371072  28652   ??  S    Tue02PM   0:10.20 /usr/libexec/lsd
+dittb001         13907   0.0  0.0  4328420   5072   ??  S    Tue02PM   0:00.61 /usr/sbin/distno
+dittb001         13883   0.0  0.0  4327752   3556   ??  S    Tue02PM   0:01.34 /usr/sbin/cfpref
+dittb001         13882   0.0  0.1  4354188  10884   ??  S    Tue02PM   0:00.05 /System/Library/
+root             13850   0.0  0.6  4393068  97548   ??  Ss   Tue02PM   0:37.76 /usr/libexec/san
+herro009         12924   0.0  0.0  4354528   7164   ??  S    Mon12PM   0:00.07 /System/Library/
+herro009         12789   0.0  0.1  4357736  18192   ??  S    Mon11AM   0:00.10 /System/Library/
+_assetcache      11984   0.0  0.1  4359096   9860   ??  Ss   Mon10AM   0:00.50 /System/Library/
+herro009         11638   0.0  0.1  4356412  11836   ??  S    Mon10AM   0:02.49 /usr/libexec/sec
+gullo003         10654   0.0  0.0  4327756   5572   ??  S    Mon08AM   0:00.04 /System/Library/
+gullo003          9636   0.0  0.1  4362584  12296   ??  S    Mon07AM   0:01.58 /usr/libexec/sec
+root              8167   0.0  0.0  4301040   4836   ??  Ss   Sat04AM   0:00.01 /usr/sbin/aslman
+root              7835   0.0  0.0  4302476   4920   ??  Ss   Sat01AM   0:00.01 /usr/libexec/app
+root              7204   0.0  0.0  4294832    828   ??  SNs  Fri01AM   0:00.00 /usr/libexec/per
+_usbmuxd          7021   0.0  0.0  4356976   7080   ??  Ss   Thu04PM   0:00.23 /System/Library/
+root              6940   0.0  0.1  4356172  10136   ??  Ss   Thu04PM   0:00.25 /usr/libexec/sec
+hanse109          6591   0.0  0.1  4302064   9196   ??  Ss   Thu03PM   0:00.01 /System/Library/
+hanse109          6588   0.0  0.2  4403052  33644   ??  S    Thu03PM   0:00.58 /System/Library/
+delun002          6034   0.0  0.0  4302224   8008   ??  S    13Feb20   0:00.01 /System/Library/
+root              5974   0.0  0.1  4309996   9128   ??  Ss   13Feb20   0:00.01 /System/Library/
+root              5973   0.0  0.2  4437220  38240   ??  Ss   13Feb20   0:00.33 /System/Library/
+delun002          5952   0.0  0.1  4362184  10200   ??  S    13Feb20   0:01.27 /System/Library/
+delun002          5949   0.0  0.1  4362536  12672   ??  S    13Feb20   0:07.47 /usr/libexec/sec
+hanse109          5948   0.0  0.1  4360556  14484   ??  S    13Feb20   0:01.90 /usr/libexec/sec
+root              5807   0.0  0.0  4354928   7888   ??  Ss   13Feb20   0:00.34 /usr/libexec/xpc
+hanse109          5803   0.0  0.1  4329020  10844   ??  S    13Feb20   0:00.07 /System/Library/
+delun002          5213   0.0  0.0  4327824   5532   ??  S    13Feb20   0:00.09 /System/Library/
+hanse109          5170   0.0  0.1  4495676  14960   ??  S    13Feb20   0:00.13 /System/Library/
+root              5151   0.0  0.1  4358188  10896   ??  Ss   13Feb20   0:01.05 /usr/libexec/rtc
+hanse109          5144   0.0  0.0  4354528   7844   ??  S    13Feb20   0:00.13 /System/Library/
+hanse109          5060   0.0  0.0  4327756   5568   ??  S    13Feb20   0:00.07 /System/Library/
+_windowserver     5040   0.0  0.1  4836880  12784   ??  Ss   13Feb20   0:00.04 /System/Library/
+hanse109          4951   0.0  0.1  4354252  24100   ??  S    13Feb20   0:00.15 /System/Library/
+hanse109          4926   0.0  0.1  4355080  10460   ??  S    13Feb20   0:00.08 /System/Library/
+hanse109          4880   0.0  0.0  4327796   6012   ??  S    13Feb20   0:00.14 /System/Library/
+hanse109          4871   0.0  0.2  4456428  34028   ??  S    13Feb20   0:00.23 /System/Library/
+hanse109          4806   0.0  0.1  4358324  16004   ??  S    13Feb20   0:02.64 /usr/libexec/pkd
+hanse109          4752   0.0  0.1  4355364  18724   ??  S    13Feb20   0:00.31 /System/Library/
+hanse109          4719   0.0  0.1  4363200  17396   ??  S    13Feb20   0:01.60 /usr/libexec/lsd
+hanse109          4715   0.0  0.0  4328420   5512   ??  S    13Feb20   0:01.37 /usr/sbin/distno
+hanse109          4692   0.0  0.0  4327792   3728   ??  S    13Feb20   0:03.16 /usr/sbin/cfpref
+hanse109          4691   0.0  0.1  4354740  12656   ??  S    13Feb20   0:00.27 /System/Library/
+root              4577   0.0  0.1  4845316  20888   ??  Ss   13Feb20   0:00.09 /System/Library/
+delun002          4575   0.0  0.1  4354768  19532   ??  S    13Feb20   0:00.31 /System/Library/
+delun002          4570   0.0  0.1  4357960  17868   ??  S    13Feb20   0:00.29 /System/Library/
+delun002          4569   0.0  0.1  4355220  14488   ??  Ss   13Feb20   0:00.15 /System/Library/
+root              4566   0.0  0.1  4327908   8792   ??  Ss   13Feb20   0:00.04 /usr/libexec/tzd
+delun002          4564   0.0  0.1  4357980  18488   ??  S    13Feb20   0:00.87 /usr/libexec/sil
+delun002          4562   0.0  0.1  4354804  10544   ??  S    13Feb20   0:00.17 /System/Library/
+root              4348   0.0  0.0  4302000    808   ??  SNs  13Feb20   0:00.00 /usr/libexec/per
+root              4284   0.0  0.0  4294832    828   ??  SNs  13Feb20   0:00.01 /usr/libexec/per
+delun002          4283   0.0  0.1  4358836  21912   ??  S    13Feb20   0:01.02 /System/Library/
+delun002          4265   0.0  0.0  4305748   5212   ??  S    13Feb20   0:00.02 /usr/libexec/spi
+root              4215   0.0  0.0  4328528   5000   ??  Ss   12Feb20   0:00.06 /usr/libexec/mob
+delun002          4148   0.0  0.1  4377300  12344   ??  S    12Feb20   0:02.47 /System/Library/
+root              4119   0.0  0.1  4353788  12120   ??  Ss   12Feb20   0:00.13 /System/Library/
+delun002          4073   0.0  0.3 106199428  44124   ??  Ss   12Feb20   0:01.69 /System/Library/
+delun002          4005   0.0  0.1  4836048  23020   ??  Ss   12Feb20   0:00.21 /System/Library/
+delun002          4002   0.0  0.3  4940248  44768   ??  Ss   12Feb20   0:02.22 /System/Library/
+_windowserver     3859   0.0  0.1  4836300  19688   ??  Ss   12Feb20   0:00.20 /System/Library/
+delun002          3855   0.0  0.0  4357468   8376   ??  S    12Feb20   0:00.31 /System/Library/
+delun002          3854   0.0  0.0  4327856   6892   ??  S    12Feb20   0:00.07 /System/Library/
+root              3772   0.0  0.5  4381124  81340   ??  Ss   12Feb20   0:06.01 /System/Library/
+delun002          3381   0.0  0.0  4388428   6568   ??  S    12Feb20   0:00.52 /System/Library/
+delun002          3380   0.0  0.1  4837344  16104   ??  Ss   12Feb20   0:00.04 /System/Library/
+delun002          3379   0.0  0.1  4900680  20292   ??  S    12Feb20   0:01.57 /System/Library/
+delun002          3371   0.0  0.1  4364548  19352   ??  S    12Feb20   0:01.87 /usr/libexec/key
+delun002          3370   0.0  0.6  4597264  92300   ??  S    12Feb20   0:01.67 /System/Library/
+delun002          3367   0.0  0.0  4327756   5540   ??  S    12Feb20   0:00.08 /System/Library/
+delun002          3366   0.0  0.2  4459372  35016   ??  Ss   12Feb20   0:00.85 /System/Library/
+delun002          3364   0.0  0.1  4364648  22120   ??  S    12Feb20   0:02.57 /System/Library/
+delun002          3351   0.0  0.1  4496700  24668   ??  S    12Feb20   0:00.54 /System/Library/
+delun002          3350   0.0  0.2  4646776  37264   ??  S    12Feb20   0:00.86 /System/Library/
+delun002          3344   0.0  0.1  4354520  11956   ??  Ss   12Feb20   0:00.16 /System/Library/
+delun002          3342   0.0  0.1  4356616  12060   ??  Ss   12Feb20   0:00.30 /System/Library/
+delun002          3331   0.0  0.2  4400352  25548   ??  S    12Feb20   1:11.23 /System/Library/
+delun002          3326   0.0  0.2  4469960  37128   ??  S    12Feb20   0:00.12 /System/Library/
+delun002          3325   0.0  0.0  4327796   5964   ??  S    12Feb20   0:00.38 /System/Library/
+delun002          3324   0.0  0.2  5000188  41388   ??  Ss   12Feb20   0:01.14 /Applications/Sa
+delun002          3323   0.0  0.2  4845248  26108   ??  Ss   12Feb20   0:00.33 /System/Library/
+delun002          3321   0.0  0.4  4484372  64264   ??  Ss   12Feb20   0:20.48 /System/Library/
+delun002          3319   0.0  0.2  4455404  33852   ??  S    12Feb20   0:00.34 /System/Library/
+delun002          3318   0.0  0.1  4358040  13052   ??  Ss   12Feb20   0:00.13 /System/Library/
+delun002          3317   0.0  0.1  4376948  23172   ??  S    12Feb20   0:01.35 /System/Library/
+delun002          3316   0.0  0.1  4373980  22920   ??  S    12Feb20   0:03.03 /System/Library/
+delun002          3315   0.0  0.1  4355028  15644   ??  S    12Feb20   0:00.13 /System/Library/
+delun002          3313   0.0  0.9  6327132 155356   ??  S    12Feb20   4:21.78 /Applications/Sa
+delun002          3307   0.0  0.2  4421304  34364   ??  Ss   12Feb20   0:01.92 /Applications/Ut
+delun002          3300   0.0  0.1  4355664  13120   ??  S    12Feb20   0:37.60 /Applications/Ut
+delun002          3298   0.0  0.4  5032384  72360   ??  S    12Feb20   0:22.35 /Applications/Ut
+delun002          3297   0.0  0.2  4962496  29632   ??  S    12Feb20   0:07.21 /Applications/Ut
+delun002          3294   0.0  0.8  4869048 126584   ??  S    12Feb20   5:13.73 /Applications/Ut
+delun002          3293   0.0  0.1  4358520  11020   ??  S    12Feb20   0:00.16 /System/Library/
+delun002          3288   0.0  0.4  5026988  59184   ??  S    12Feb20   0:03.91 /Library/Applica
+delun002          3286   0.0  0.1  4355664  12988   ??  S    12Feb20   0:30.93 /Library/Applica
+delun002          3284   0.0  0.5  4804584  79820   ??  S    12Feb20   0:00.85 /Applications/Ut
+delun002          3283   0.0  0.1  4355664  13028   ??  S    12Feb20   0:31.36 /Applications/Ut
+delun002          3282   0.0  0.1  4354516  11000   ??  S    12Feb20   0:00.11 /System/Library/
+delun002          3281   0.0  0.1  4355080  10472   ??  S    12Feb20   0:00.10 /System/Library/
+delun002          3280   0.0  0.1  4839696   9248   ??  S    12Feb20   0:00.02 SafeEjectGPUAgen
+delun002          3278   0.0  0.2  4893700  35828   ??  Ss   12Feb20   0:01.77 /System/Library/
+delun002          3273   0.0  1.1  5644296 184108   ??  S    12Feb20   0:31.58 /Library/Applica
+delun002          3272   0.0  0.0  4355660   8288   ??  Ss   12Feb20   0:00.12 /System/Library/
+delun002          3270   0.0  0.3  4660344  51360   ??  S    12Feb20   3:46.05 /Applications/Ut
+_gamecontrollerd  3269   0.0  0.1  4327912  10564   ??  Ss   12Feb20   0:02.74 /usr/libexec/gam
+delun002          3268   0.0  0.1  4380968  15932   ??  S    12Feb20   0:15.28 /Library/Applica
+delun002          3266   0.0  0.3  4369080  46756   ??  S    12Feb20   0:08.60 /System/Library/
+delun002          3264   0.0  0.1  4356048  14916   ??  S    12Feb20   0:00.95 /usr/libexec/vid
+delun002          3258   0.0  0.0  4327636   5180   ??  Ss   12Feb20   0:00.02 /System/Library/
+delun002          3257   0.0  0.1  4354300  13652   ??  Ss   12Feb20   0:00.50 /System/Library/
+delun002          3256   0.0  0.1  4845260  13828   ??  Ss   12Feb20   0:00.05 /System/Library/
+delun002          3254   0.0  0.1  4837440  17848   ??  Ss   12Feb20   0:00.07 /System/Library/
+delun002          3252   0.0  0.2  4369092  30176   ??  S    12Feb20   0:03.54 /System/Library/
+delun002          3248   0.0  0.1  4329020  10836   ??  S    12Feb20   0:00.08 /System/Library/
+delun002          3247   0.0  0.1  4394056  21984   ??  Ss   12Feb20   0:00.36 /System/Library/
+delun002          3246   0.0  0.1  4846560  16236   ??  Ss   12Feb20   0:00.05 /System/Library/
+delun002          3245   0.0  0.1  4328584  11012   ??  S    12Feb20   0:00.10 /System/Library/
+delun002          3243   0.0  0.3  4414652  52648   ??  S    12Feb20   3:33.92 /Library/Applica
+delun002          3241   0.0  0.1  4382836  22568   ??  S    12Feb20   0:02.72 /System/Library/
+delun002          3240   0.0  0.4  4725576  67064   ??  S    12Feb20   2:11.82 /Applications/Ut
+delun002          3239   0.0  0.1  4355488  19404   ??  S    12Feb20   0:01.12 /System/Library/
+delun002          3238   0.0  0.1  4362456  16852   ??  S    12Feb20   0:01.59 /usr/libexec/kno
+delun002          3237   0.0  0.1  4885132  15676   ??  S    12Feb20   0:01.54 /System/Library/
+delun002          3236   0.0  0.1  4388368  18128   ??  S    12Feb20   0:01.38 /Library/Applica
+delun002          3233   0.0  0.1  4355252  17148   ??  S    12Feb20   0:00.19 /System/Library/
+delun002          3231   0.0  0.1  4361220  13688   ??  S    12Feb20   0:01.86 /System/Library/
+delun002          3229   0.0  0.1  4355316  12020   ??  SN   12Feb20   0:00.15 /usr/local/jamf/
+delun002          3227   0.0  0.1  4353896  12596   ??  S    12Feb20   0:00.12 /System/Library/
+delun002          3222   0.0  0.1  4327400  17620   ??  S    12Feb20   0:00.06 /System/Library/
+delun002          3215   0.0  0.3  4963324  58004   ??  S    12Feb20   0:04.04 /System/Library/
+delun002          3214   0.0  0.3  4943064  54764   ??  S    12Feb20   0:08.27 /System/Library/
+delun002          3213   0.0  0.6  4983308 108496   ??  S    12Feb20   0:06.64 /System/Library/
+delun002          3212   0.0  0.0  4319472   8364   ??  Ss   12Feb20   0:00.02 /System/Library/
+delun002          3211   0.0  0.1  4356616  10920   ??  Ss   12Feb20   0:00.30 /System/Library/
+delun002          3210   0.0  0.0  4359792   7668   ??  S    12Feb20   0:00.40 /System/Library/
+_fpsd             3209   0.0  0.0  4329060   6256   ??  Ss   12Feb20   0:00.58 /System/Library/
+delun002          3206   0.0  0.1  4327384  15416   ??  Ss   12Feb20   0:00.17 /System/Library/
+delun002          3205   0.0  0.1  4354620  14012   ??  S    12Feb20   0:00.17 /usr/libexec/sir
+delun002          3184   0.0  0.1  4328468  13428   ??  S    12Feb20   0:00.21 /System/Library/
+delun002          3181   0.0  0.1  4359708  18676   ??  S    12Feb20   0:00.29 /System/Library/
+delun002          3180   0.0  0.2  4405604  31540   ??  Ss   12Feb20   0:00.81 /System/Library/
+delun002          3179   0.0  0.1  4354252  23304   ??  S    12Feb20   0:00.23 /System/Library/
+delun002          3172   0.0  0.0  4354076   7668   ??  S    12Feb20   0:00.43 /System/Library/
+delun002          3171   0.0  0.1  4360728  16532   ??  S    12Feb20   0:01.13 /System/Library/
+delun002          3170   0.0  0.2  4405792  35048   ??  S    12Feb20   0:03.12 /System/Library/
+delun002          3168   0.0  0.1  4363504  17196   ??  S    12Feb20   0:00.84 /System/Library/
+delun002          3166   0.0  0.1  4360688  10480   ??  S    12Feb20   0:26.29 /System/Library/
+delun002          3158   0.0  0.1  4889444  16272   ??  S    12Feb20   0:01.59 /System/Library/
+root              3155   0.0  0.1  4354956  10748   ??  S    12Feb20   0:01.39 /System/Library/
+delun002          3151   0.0  0.1  4360004  10968   ??  S    12Feb20   0:01.06 /System/Library/
+delun002          3150   0.0  0.1  4381292  17104   ??  S    12Feb20   0:01.93 /System/Library/
+delun002          3104   0.0  0.1  4368980  24936   ??  S    12Feb20   0:03.37 /System/Library/
+delun002          3101   0.0  0.1  4846560  17796   ??  Ss   12Feb20   0:00.07 /System/Library/
+delun002          3100   0.0  0.1  4329024  18332   ??  S    12Feb20   0:00.21 /System/Library/
+delun002          3099   0.0  0.1  4359464  18336   ??  S    12Feb20   0:22.52 /usr/libexec/pkd
+delun002          3097   0.0  0.1  4355408  11372   ??  Ss   12Feb20   0:00.43 /System/Library/
+delun002          3091   0.0  0.1  4327688  12140   ??  S    12Feb20   0:00.11 /System/Library/
+delun002          3077   0.0  0.1  4355560  14008   ??  Ss   12Feb20   0:00.47 /System/Library/
+delun002          3076   0.0  0.0  4327160   4696   ??  Ss   12Feb20   0:00.02 /System/Library/
+delun002          3075   0.0  0.1  4355816  22928   ??  S    12Feb20   0:00.32 /usr/libexec/fmf
+delun002          3074   0.0  0.0  4327200   5956   ??  S    12Feb20   0:00.11 /System/Library/
+delun002          3073   0.0  0.1  4354584  18320   ??  S    12Feb20   0:00.11 /System/Library/
+delun002          3072   0.0  0.1  4356564  11408   ??  S    12Feb20   0:01.31 /System/Library/
+delun002          3070   0.0  0.2  4360036  31896   ??  S    12Feb20   0:00.40 /System/Library/
+delun002          3069   0.0  0.1  4355528  14436   ??  Ss   12Feb20   0:00.50 /System/Library/
+delun002          3068   0.0  0.1  4356196   9748   ??  S    12Feb20   0:00.50 /System/Library/
+delun002          3064   0.0  0.2  4361720  28880   ??  S    12Feb20   0:03.05 /System/Library/
+delun002          3063   0.0  0.1  4354976  12884   ??  S    12Feb20   0:01.60 /System/Library/
+delun002          3062   0.0  0.1  4373672  15552   ??  S    12Feb20   0:01.97 /System/Library/
+delun002          3061   0.0  0.0  4328280   7368   ??  S    12Feb20   0:00.07 /usr/libexec/pbo
+delun002          3059   0.0  0.0  4355340   8316   ??  S    12Feb20   0:00.46 /System/Library/
+delun002          3058   0.0  0.0  4356424   7544   ??  S    12Feb20   0:00.57 /usr/libexec/swc
+delun002          3056   0.0  0.0  4358952   8372   ??  S    12Feb20   0:00.38 /System/Library/
+delun002          3055   0.0  0.2  4512956  31304   ??  S    12Feb20   0:02.08 /System/Library/
+delun002          3053   0.0  0.1  4360516  13044   ??  S    12Feb20   0:02.51 /usr/libexec/nsu
+delun002          3051   0.0  0.1  4354528   8532   ??  S    12Feb20   0:00.18 /System/Library/
+delun002          3049   0.0  0.1  4358880  18880   ??  S    12Feb20   0:00.17 /System/Library/
+delun002          3047   0.0  0.2  4361456  32004   ??  Ss   12Feb20   0:01.54 /System/Library/
+delun002          3043   0.0  0.1  4327852  18880   ??  S    12Feb20   0:01.84 /System/Library/
+delun002          3017   0.0  0.2  4373700  32268   ??  S    12Feb20   0:01.34 /System/Library/
+delun002          3016   0.0  0.2  4327356  26640   ??  S    12Feb20   0:00.12 /System/Library/
+delun002          3015   0.0  0.1  4354824  14980   ??  S    12Feb20   0:00.78 /System/Library/
+delun002          3014   0.0  0.1  4327196   8556   ??  S    12Feb20   0:00.06 /System/Library/
+delun002          3012   0.0  0.0  4327640   6460   ??  S    12Feb20   0:00.11 /System/Library/
+delun002          3009   0.0  0.2  4473056  39636   ??  S    12Feb20   0:09.81 /System/Library/
+delun002          3008   0.0  0.2  4380668  38428   ??  S    12Feb20   0:03.54 /System/Library/
+delun002          3007   0.0  0.2  4353856  27636   ??  S    12Feb20   0:00.17 /System/Library/
+delun002          3006   0.0  0.1  4327436   9212   ??  S    12Feb20   0:00.02 /System/Library/
+delun002          3005   0.0  0.1  4366456  22440   ??  S    12Feb20   0:01.66 /usr/libexec/adp
+delun002          3004   0.0  0.1  4353924  15124   ??  S    12Feb20   0:00.12 /System/Library/
+delun002          3003   0.0  0.1  4373660  13992   ??  S    12Feb20   0:01.46 /System/Library/
+delun002          3001   0.0  0.5  4955288  82168   ??  S    12Feb20   0:06.79 /System/Library/
+delun002          2999   0.0  0.0  4327780   5748   ??  S    12Feb20   0:00.08 /System/Library/
+delun002          2998   0.0  0.3  4374932  44392   ??  S    12Feb20   0:03.89 /System/Library/
+delun002          2997   0.0  0.1  4355796  12008   ??  S    12Feb20   0:00.19 /usr/libexec/net
+delun002          2996   0.0  0.1  4357256  17264   ??  S    12Feb20   0:01.03 /usr/sbin/userno
+delun002          2995   0.0  0.2  4363800  39148   ??  S    12Feb20   0:04.21 /usr/libexec/rou
+delun002          2994   0.0  0.1  4355488  19444   ??  S    12Feb20   0:00.67 /usr/libexec/rap
+delun002          2989   0.0  0.1  4327352  18512   ??  S    12Feb20   0:00.41 /System/Library/
+delun002          2986   0.0  0.1  4354856  18792   ??  S    12Feb20   0:00.46 /System/Library/
+delun002          2984   0.0  0.1  4355792  24660   ??  S    12Feb20   0:01.09 /System/Library/
+delun002          2983   0.0  0.3  4455548  44768   ??  S    12Feb20   0:05.77 /System/Library/
+delun002          2982   0.0  0.1  4364480  21432   ??  S    12Feb20   0:03.61 /usr/libexec/nsu
+delun002          2981   0.0  0.1  4359932  11136   ??  S    12Feb20   0:00.74 /System/Library/
+delun002          2977   0.0  0.1  4364752  21404   ??  S    12Feb20   0:01.57 /System/Library/
+delun002          2974   0.0  0.1  4357220  14264   ??  S    12Feb20   0:00.35 /usr/libexec/lan
+delun002          2973   0.0  0.2  4364588  34376   ??  S    12Feb20   0:00.51 /System/Library/
+delun002          2972   0.0  0.2  4371424  38816   ??  S    12Feb20   0:21.72 /System/Library/
+delun002          2958   0.0  0.1  4359408  15432   ??  S    12Feb20   0:01.48 /usr/libexec/sec
+delun002          2952   0.0  0.1  4367664  17388   ??  S    12Feb20   0:15.47 /usr/libexec/tru
+delun002          2951   0.0  0.2  4370588  27752   ??  S    12Feb20   0:15.08 /usr/libexec/lsd
+delun002          2950   0.0  0.2  4367516  34448   ??  S    12Feb20   0:05.02 /System/Library/
+delun002          2945   0.0  0.0  4328420   5344   ??  S    12Feb20   0:05.10 /usr/sbin/distno
+delun002          2943   0.0  0.2  4357148  36752   ??  S    12Feb20   0:04.70 /usr/libexec/Use
+delun002          2923   0.0  0.0  4327732   3596   ??  S    12Feb20   0:14.05 /usr/sbin/cfpref
+delun002          2922   0.0  0.1  4354188  10764   ??  S    12Feb20   0:00.11 /System/Library/
+delun002          2733   0.0  0.2  4925104  32556   ??  Ss   12Feb20   0:07.36 /System/Library/
+herro009          2263   0.0  0.1  4535108  18176   ??  S    12Feb20   0:00.25 /System/Library/
+herro009          2248   0.0  0.0  4327756   5616   ??  S    12Feb20   0:00.09 /System/Library/
+herro009          2227   0.0  0.0  4327796   6272   ??  S    12Feb20   0:00.30 /System/Library/
+herro009          2222   0.0  0.2  4457228  34040   ??  S    12Feb20   0:00.47 /System/Library/
+herro009          2198   0.0  0.1  4354016  22776   ??  S    12Feb20   0:00.16 /System/Library/
+_datadetectors    2186   0.0  0.1  4339200  23884   ??  Ss   12Feb20   0:05.24 /usr/libexec/Dat
+herro009          2124   0.0  0.1  4355080  10512   ??  S    12Feb20   0:00.10 /System/Library/
+herro009          2068   0.0  0.1  4329020  10816   ??  S    12Feb20   0:00.09 /System/Library/
+herro009          2002   0.0  0.1  4358292  15060   ??  S    12Feb20   0:07.90 /usr/libexec/pkd
+herro009          1959   0.0  0.1  4355364  18768   ??  S    12Feb20   0:00.34 /System/Library/
+herro009          1926   0.0  0.1  4362360  15168   ??  S    12Feb20   0:01.78 /usr/libexec/lsd
+herro009          1922   0.0  0.0  4328420   5360   ??  S    12Feb20   0:02.27 /usr/sbin/distno
+herro009          1898   0.0  0.0  4327780   3684   ??  S    12Feb20   0:04.24 /usr/sbin/cfpref
+herro009          1896   0.0  0.1  4354188  11076   ??  S    12Feb20   0:00.13 /System/Library/
+root              1761   0.0  0.1  4329008  15668   ??  Ss   12Feb20   0:00.15 /System/Library/
+_applepay         1615   0.0  0.0  4355092   8304   ??  Ss   12Feb20   0:00.17 /usr/libexec/nfc
+root              1118   0.0  0.6  4400360  98272   ??  Ss   12Feb20   0:04.42 /usr/sbin/spindu
+gullo003          1102   0.0  0.1  4537156  18028   ??  S    12Feb20   0:00.35 /System/Library/
+root              1009   0.0  0.1  4360784   8584   ??  Ss   12Feb20   0:03.08 /usr/libexec/dpr
+_spotlight        1004   0.0  0.1  4358244  11996   ??  S    12Feb20   0:02.33 /usr/libexec/tru
+gullo003           985   0.0  0.1  4353976  22072   ??  S    12Feb20   0:00.15 /System/Library/
+root               959   0.0  0.1  4355428  14048   ??  Ss   12Feb20   0:00.52 /Library/Privile
+root               934   0.0  0.0  4355856   8044   ??  Ss   12Feb20   0:00.85 /usr/bin/sysdiag
+root               933   0.0  0.2  4376280  36212   ??  Ss   12Feb20   0:06.35 /System/Library/
+_assetcache        929   0.0  0.1  4357660  13600   ??  Ss   12Feb20   0:00.78 /usr/libexec/Ass
+gullo003           927   0.0  0.0  4319352   4652   ??  S    12Feb20   0:00.02 /System/Library/
+root               921   0.0  0.2  4400256  38768   ??  Ss   12Feb20   0:01.46 /System/Library/
+root               905   0.0  0.1  4362072  16360   ??  Ss   12Feb20   0:04.99 /System/Library/
+gullo003           876   0.0  0.1  4357128  10456   ??  S    12Feb20   0:00.10 /System/Library/
+gullo003           870   0.0  0.1  4329020  10816   ??  S    12Feb20   0:00.10 /System/Library/
+gullo003           775   0.0  0.2  4456204  33864   ??  S    12Feb20   0:00.30 /System/Library/
+root               768   0.0  0.0  4332796   7832   ??  Ss   12Feb20   0:00.67 /usr/sbin/fileco
+gullo003           725   0.0  0.1  4358608  14536   ??  S    12Feb20   0:03.99 /usr/libexec/pkd
+root               675   0.0  0.1  4355276   8580   ??  Ss   12Feb20   0:01.22 /usr/sbin/wirele
+root               672   0.0  0.0  4327220   6392   ??  Ss   12Feb20   0:00.14 /System/Library/
+gullo003           668   0.0  0.1  4355364  18360   ??  S    12Feb20   0:00.33 /System/Library/
+root               657   0.0  0.1  4354924  12972   ??  Ss   12Feb20   0:01.45 /usr/sbin/Wirele
+gullo003           635   0.0  0.1  4363632  15304   ??  S    12Feb20   0:01.26 /usr/libexec/lsd
+gullo003           631   0.0  0.0  4328420   5704   ??  S    12Feb20   0:02.10 /usr/sbin/distno
+root               616   0.0  0.0  4328852   6728   ??  Ss   12Feb20   0:00.28 /usr/libexec/sec
+gullo003           597   0.0  0.0  4327788   3324   ??  S    12Feb20   0:03.70 /usr/sbin/cfpref
+gullo003           596   0.0  0.1  4354188  10960   ??  S    12Feb20   0:00.15 /System/Library/
+root               584   0.0  0.0  4311592   4980   ??  Ss   12Feb20   0:00.41 /System/Library/
+_spotlight         570   0.0  0.1  4328900  11808   ??  S    12Feb20   0:00.11 /System/Library/
+root               569   0.0  0.2  4376724  37176   ??  Ss   12Feb20   0:02.78 /System/Library/
+_softwareupdate    568   0.0  0.1  4354944  10472   ??  Ss   12Feb20   0:00.15 /System/Library/
+_softwareupdate    559   0.0  0.0  4328420   2780   ??  S    12Feb20   0:00.43 /usr/sbin/distno
+_softwareupdate    558   0.0  0.0  4319448   1200   ??  S    12Feb20   0:00.41 /usr/sbin/cfpref
+root               553   0.0  0.1  4329596  12168   ??  Ss   12Feb20   0:00.27 /System/Library/
+_softwareupdate    552   0.0  0.9  4520028 142908   ??  Ss   12Feb20   2:35.18 /System/Library/
+_fpsd              551   0.0  0.1  4331476   9252   ??  Ss   12Feb20   0:00.42 /System/Library/
+root               550   0.0  0.0  4357632   7972   ??  Ss   12Feb20   0:00.98 /System/Library/
+root               549   0.0  0.1  4356908  19656   ??  Ss   12Feb20   0:02.11 /System/Library/
+root               548   0.0  0.1  4357232  15668   ??  Ss   12Feb20   0:00.20 /System/Library/
+root               547   0.0  0.1  4364332  21428   ??  Ss   12Feb20   0:02.29 /System/Library/
+_spotlight         536   0.0  0.0  4328420   3168   ??  S    12Feb20   0:00.50 /usr/sbin/distno
+root               472   0.0  0.0  4327752   7388   ??  Ss   12Feb20   0:00.03 /System/Library/
+_analyticsd        443   0.0  0.1  4356388  12584   ??  Ss   12Feb20   0:06.55 /System/Library/
+root               439   0.0  0.0  4327744   1496   ??  Ss   12Feb20   0:00.09 /System/Library/
+root               437   0.0  0.0  4355716   6332   ??  S    12Feb20   0:00.22 /usr/sbin/system
+root               422   0.0  0.0  4327640   7340   ??  Ss   12Feb20   0:07.84 /usr/libexec/sys
+root               396   0.0  0.0  4294608   4388   ??  Ss   12Feb20   0:00.03 /usr/libexec/smd
+root               395   0.0  0.0  4356628   7808   ??  Ss   12Feb20   0:00.41 /System/Library/
+_nsurlstoraged     333   0.0  0.0  4327840   7796   ??  Ss   12Feb20   0:00.47 /usr/libexec/nsu
+root               332   0.0  0.0  4329072   6868   ??  Ss   12Feb20   0:05.66 /System/Library/
+_netbios           325   0.0  0.1  4329852   9708   ??  SNs  12Feb20   0:03.16 /usr/sbin/netbio
+root               314   0.0  0.1  4355172  21280   ??  Ss   12Feb20   0:00.21 /usr/libexec/fin
+root               308   0.0  0.0  4328420   2980   ??  S    12Feb20   0:00.42 /usr/sbin/distno
+root               306   0.0  0.1  4358732   9888   ??  Ss   12Feb20   0:00.29 /usr/sbin/system
+root               304   0.0  0.0  4327676   5804   ??  Ss   12Feb20   0:00.03 /System/Library/
+root               301   0.0  0.1  4327636  10664   ??  Ss   12Feb20   0:00.12 /System/Library/
+root               300   0.0  0.1  4328464  10812   ??  Ss   12Feb20   0:00.04 /System/Library/
+root               299   0.0  0.1  4333240  11744   ??  Ss   12Feb20   0:02.20 /System/Library/
+_atsserver         294   0.0  0.1  4356108  10744   ??  Ss   12Feb20   0:00.31 /System/Library/
+root               287   0.0  0.1  4303496  11112   ??  Ss   12Feb20   0:00.02 /usr/libexec/boo
+root               286   0.0  0.1  4330952  10600   ??  Ss   12Feb20   0:02.79 /System/Library/
+root               246   0.0  0.0  4328012   6260   ??  Ss   12Feb20   0:00.04 /usr/libexec/col
+root               245   0.0  0.1  4366752  19956   ??  Ss   12Feb20   0:13.49 /System/Library/
+root               244   0.0  0.0  4327244   6460   ??  Ss   12Feb20   0:00.16 /usr/libexec/col
+root               243   0.0  0.1  4474220  13032   ??  Ss   12Feb20   0:00.37 /System/Library/
+_coreaudiod        242   0.0  0.1  4300780   9172   ??  Ss   12Feb20   0:00.01 /System/Library/
+root               241   0.0  0.0  4329128   8224   ??  Ss   12Feb20   0:00.12 /System/Library/
+root               215   0.0  0.8  5085972 141712   ??  Ss   12Feb20   0:42.39 /System/Library/
+root               202   0.0  0.1  4293404   9340   ??  Ss   12Feb20   0:00.03 /usr/libexec/the
+root               198   0.0  0.0  4295384   4928   ??  Ss   12Feb20   0:00.76 /usr/libexec/wat
+_cmiodalassistants   196   0.0  0.1  4384736  10916   ??  Ss   12Feb20   0:00.98 /System/Library/
+root               195   0.0  0.0  4303152   4200   ??  Ss   12Feb20   0:00.07 /usr/libexec/fir
+root               194   0.0  0.1  4354976   9376   ??  Ss   12Feb20   0:00.87 /usr/libexec/usb
+root               192   0.0  0.1  4365388  20660   ??  Ss   12Feb20   0:15.13 /usr/libexec/air
+root               191   0.0  0.0  4327196   6388   ??  Ss   12Feb20   0:00.08 /usr/libexec/apf
+root               190   0.0  0.1  4302664   9708   ??  Ss   12Feb20   0:00.05 /System/Library/
+root               187   0.0  0.1  4357688  13832   ??  Ss   12Feb20   0:05.41 /System/Library/
+root               185   0.0  0.2  4371144  33248   ??  Ss   12Feb20   0:49.35 /usr/libexec/sys
+root               184   0.0  0.0  4354984   6924   ??  Ss   12Feb20   0:03.44 /usr/sbin/mDNSRe
+_mdnsresponder     182   0.0  0.1  4358096  12128   ??  Ss   12Feb20   0:31.87 /usr/sbin/mDNSRe
+root               180   0.0  0.1  4363204  14864   ??  Ss   12Feb20   0:01.44 /usr/libexec/lsd
+_networkd          174   0.0  0.1  4363380  11632   ??  Ss   12Feb20   0:10.42 /usr/libexec/sym
+_nsurlsessiond     170   0.0  0.1  4365996  23120   ??  Ss   12Feb20   0:05.56 /usr/libexec/nsu
+_coreaudiod        169   0.0  0.0  4354556   7660   ??  Ss   12Feb20   0:00.28 /System/Library/
+root               165   0.0  0.2  4365956  26264   ??  Ss   12Feb20   0:18.91 /usr/libexec/mob
+_coreaudiod        161   0.0  0.1  4336488  15532   ??  Ss   12Feb20   0:03.69 /usr/sbin/coreau
+root               159   0.0  0.1  4360384   9792   ??  Ss   12Feb20   0:00.40 /usr/libexec/neh
+root               158   0.0  0.0  4328016   6056   ??  Ss   12Feb20   0:02.96 aslmanager
+root               157   0.0  0.1  4360772  18476   ??  Ss   12Feb20   0:14.15 /System/Library/
+root               156   0.0  0.1  4369932  24464   ??  Ss   12Feb20   0:42.13 /usr/libexec/tru
+root               155   0.0  0.1  4362676  16984   ??  Ss   12Feb20   0:03.14 /usr/libexec/amf
+_ctkd              154   0.0  0.1  4328912  10544   ??  Ss   12Feb20   0:00.02 /System/Library/
+root               146   0.0  0.1  4310300   8972   ??  Ss   12Feb20   0:00.01 /System/Library/
+root               139   0.0  0.1  4402636  18804   ??  Ss   12Feb20   0:10.25 /System/Library/
+root               138   0.0  0.1  4358184  13732   ??  Ss   12Feb20   0:04.76 /System/Library/
+root               130   0.0  0.0  4328252   8168   ??  Ss   12Feb20   0:22.62 /usr/sbin/cfpref
+_distnote          129   0.0  0.0  4328420   3908   ??  Ss   12Feb20   0:03.83 /usr/sbin/distno
+root               128   0.0  0.0  4294632   2844   ??  Ss   12Feb20   0:34.70 /usr/sbin/notify
+root               127   0.0  0.1  4355524  14012   ??  Ss   12Feb20   0:00.94 /usr/libexec/Air
+root               126   0.0  0.1  4355244  13148   ??  Ss   12Feb20   0:02.34 /usr/libexec/cor
+root               123   0.0  0.1  4359372  11772   ??  Ss   12Feb20   0:04.83 /usr/sbin/blueto
+root               121   0.0  0.0  4327628   5328   ??  Ss   12Feb20   0:00.03 /usr/sbin/Kernel
+root               120   0.0  0.0  4356444   7288   ??  Ss   12Feb20   0:00.84 /System/Library/
+root               119   0.0  0.0  4327312   6812   ??  Ss   12Feb20   0:00.24 /System/Library/
+root               115   0.0  0.1  4355860   8532   ??  Ss   12Feb20   0:00.39 /System/Library/
+root               114   0.0  0.1  4359692  17020   ??  Ss   12Feb20   0:18.30 /usr/libexec/das
+_displaypolicyd    112   0.0  0.1  4330384  10804   ??  Ss   12Feb20   0:00.30 /usr/libexec/dis
+root               111   0.0  0.0  4327756   5532   ??  Ss   12Feb20   0:00.19 autofsd
+_locationd         109   0.0  0.1  4361280  19308   ??  Ss   12Feb20   0:07.82 /usr/libexec/loc
+root               106   0.0  0.1  4358468  14096   ??  Ss   12Feb20   0:16.01 /usr/sbin/securi
+_timed             105   0.0  0.0  4354108   7532   ??  Ss   12Feb20   0:01.47 /usr/libexec/tim
+root               104   0.0  0.1  4365136  22500   ??  Ss   12Feb20   0:30.81 /System/Library/
+root               103   0.0  0.0  4355348   7260   ??  Ss   12Feb20   0:00.39 /System/Library/
+root               102   0.0  3.0  4819216 505832   ??  S<s  12Feb20   4:15.21 /Library/Applica
+root               101   0.0  0.1  4358956  24492   ??  Ss   12Feb20   0:09.02 /System/Library/
+root               100   0.0  0.1  4444584  24276   ??  Ss   12Feb20   2:51.29 /usr/libexec/ope
+root                96   0.0  0.1  4361248  18252   ??  Ss   12Feb20   0:05.39 /usr/libexec/cor
+root                95   0.0  0.2  4329480  31084   ??  Ss   12Feb20   0:01.53 /System/Library/
+root                91   0.0  0.0  4353924   7784   ??  Ss   12Feb20   0:12.21 /usr/libexec/dis
+_iconservices       90   0.0  0.0  4328820   5512   ??  Ss   12Feb20   0:00.08 /System/Library/
+root                89   0.0  0.6  4576744 106000   ??  Ss   12Feb20   1:00.51 /System/Library/
+root                83   0.0  0.0  4327344   5552   ??  Ss   12Feb20   0:00.04 /usr/libexec/key
+root                82   0.0  0.3  4486544  49600   ??  Ss   12Feb20   0:38.54 /usr/libexec/log
+root                79   0.0  0.1  4359228  13660   ??  Ss   12Feb20   0:00.44 /Library/Applica
+root                78   0.0  0.1  4354908  12596   ??  Ss   12Feb20   0:19.13 /System/Library/
+root                77   0.0  0.1  4362400  15656   ??  Ss   12Feb20   0:14.74 /usr/libexec/con
+root                75   0.0  0.1  4361864   9160   ??  Ss   12Feb20   0:10.06 /usr/sbin/system
+_appleevents        74   0.0  0.1  4357276  11456   ??  Ss   12Feb20   0:01.05 /System/Library/
+psnotify            73   0.0  0.0  4328644   6556   ??  Ss   12Feb20   0:00.09 /Library/Applica
+root                70   0.0  0.1  4355688  23432   ??  Ss   12Feb20   0:00.84 /System/Library/
+root                69   0.0  0.1  4366848  22468   ??  SNs  12Feb20   0:03.81 /usr/local/jamf/
+root                67   0.0  0.1  4433908  16104   ??  Ss   12Feb20   0:27.98 /System/Library/
+root                66   0.0  0.2  4370640  32100   ??  Ss   12Feb20   0:28.43 /usr/libexec/kex
+root                65   0.0  0.0  4302808   5264   ??  Ss   12Feb20   0:02.03 /System/Library/
+root                62   0.0  0.1  4356768  19524   ??  Ss   12Feb20   0:03.60 /usr/libexec/Use
+root                61   0.0  0.0  4328340   1600   ??  Ss   12Feb20   0:04.91 /usr/sbin/syslog
+root             21916   0.0  0.0  4268732   1192 s001  R+    3:02PM   0:00.00 ps aux
+root                 1   0.0  0.2  4357952  38960   ??  Ss   12Feb20   4:20.65 /sbin/launchd
+hanse109         21897   0.0  0.0  4306776   1644 s001  S     3:01PM   0:00.01 -bash
+root             21896   0.0  0.0  4318992   5932 s001  Ss    3:01PM   0:00.02 login -pf hanse1
+delun002         21895   0.0  0.1  4333960  13236   ??  S     2:59PM   0:00.04 /System/Library/
+root             21831   0.0  0.0  4337708   7012   ??  Ss    2:56PM   0:00.02 /usr/sbin/ocspd
+_spotlight       21785   0.0  0.1  4338824  12760   ??  S     2:46PM   0:00.04 /System/Library/
+maclab-103:~ hanse109$ xed
+^C
+maclab-103:~ hanse109$ xed
+^C
+maclab-103:~ hanse109$ 
+maclab-103:~ hanse109$ xed &
+[1] 21937
+maclab-103:~ hanse109$ ps
+  PID TTY           TIME CMD
+21897 ttys001    0:00.02 -bash
+21937 ttys001    0:00.03 /Applications/Xcode.app/Contents/Developer/usr/bin/xed
+
+[1]+  Stopped                 xed
+maclab-103:~ hanse109$ jobs
+[1]+  Stopped                 xed
+maclab-103:~ hanse109$ xed
+^C
+maclab-103:~ hanse109$ jobs
+[1]+  Stopped                 xed
+maclab-103:~ hanse109$ xed
+^C
+maclab-103:~ hanse109$ xed &
+[2] 21942
+maclab-103:~ hanse109$ ps
+  PID TTY           TIME CMD
+21897 ttys001    0:00.03 -bash
+21937 ttys001    0:00.03 /Applications/Xcode.app/Contents/Developer/usr/bin/xed
+21942 ttys001    0:00.03 /Applications/Xcode.app/Contents/Developer/usr/bin/xed
+
+[2]+  Stopped                 xed
+maclab-103:~ hanse109$ jobs
+[1]-  Stopped                 xed
+[2]+  Stopped                 xed
+maclab-103:~ hanse109$ fg %1
+xed
+^C 
+maclab-103:~ hanse109$ xed
+^C
+maclab-103:~ hanse109$ bg %1
+-bash: bg: %1: no such job
+maclab-103:~ hanse109$ kill 21942
+maclab-103:~ hanse109$ xed &
+[3] 21971
+[2]   Terminated: 15          xed
+maclab-103:~ hanse109$ kill -1
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+
+[3]+  Stopped                 xed
+maclab-103:~ hanse109$ kill -1 21971
+maclab-103:~ hanse109$ xed &
+[4] 21972
+[3]   Hangup: 1               xed
+maclab-103:~ hanse109$ kill -INT 21972
+
+[4]+  Stopped                 xed
+maclab-103:~ hanse109$ xed
+kill -INT 21972
+xed &
+^C
+[4]+  Interrupt: 2            xed
+maclab-103:~ hanse109$ kill -SIGINT 21972
+-bash: kill: (21972) - No such process
+maclab-103:~ hanse109$ xed &
+[1] 21993
+maclab-103:~ hanse109$ xed &
+[2] 22039
+
+[1]+  Stopped                 xed
+maclab-103:~ hanse109$ killall xed
+[1]-  Terminated: 15          xed
+[2]+  Terminated: 15          xed
+maclab-103:~ hanse109$ 
