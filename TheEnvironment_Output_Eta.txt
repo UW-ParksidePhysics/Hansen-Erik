@@ -1,0 +1,24 @@
+Last login: Thu Feb 20 15:01:28 on ttys001
+maclab-103:~ hanse109$ printenv | less
+maclab-103:~ hanse109$ printenv USER
+hanse109
+maclab-103:~ hanse109$ set | less
+maclab-103:~ hanse109$ echo $HOME
+/Users/hanse109
+maclab-103:~ hanse109$ alias
+maclab-103:~ hanse109$ foo="This is some "
+maclab-103:~ hanse109$ echo $foo
+This is some
+maclab-103:~ hanse109$ foo=$foo"txt."
+maclab-103:~ hanse109$ echo $foo
+This is some txt.
+maclab-103:~ hanse109$ nano .bashrc
+maclab-103:~ hanse109$ 
+
+
+
+
+
+
+
+
