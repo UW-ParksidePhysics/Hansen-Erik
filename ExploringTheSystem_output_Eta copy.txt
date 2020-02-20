@@ -1,0 +1,55 @@
+Last login: Thu Feb 13 15:26:25 on ttys001
+maclab-101:~ lucca001$ ls
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+Documents	Library		Music		Public
+maclab-101:~ lucca001$ ls -usr
+total 0
+0 PycharmProjects	0 Music			0 Downloads
+0 Public		0 Movies		0 Documents
+0 Pictures		0 Library		0 Desktop
+maclab-101:~ lucca001$ ls /usr
+bin		libexec		sbin		standalone
+lib		local		share
+maclab-101:~ lucca001$ ls ~ /usr
+/Users/lucca001:
+Desktop		Downloads	Movies		Pictures	PycharmProjects
+Documents	Library		Music		Public
+
+/usr:
+bin		libexec		sbin		standalone
+lib		local		share
+maclab-101:~ lucca001$ ls -l
+total 0
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Desktop
+drwx------+  7 lucca001  UWP\Domain Users   224 Feb 13 15:21 Documents
+drwx------+  6 lucca001  UWP\Domain Users   192 Feb 13 14:46 Downloads
+drwx------@ 58 lucca001  UWP\Domain Users  1856 Feb 13 14:59 Library
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Movies
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Music
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Pictures
+drwxr-xr-x+  4 lucca001  UWP\Domain Users   128 Feb  4 14:31 Public
+drwxr-xr-x   5 lucca001  UWP\Domain Users   160 Feb 13 15:35 PycharmProjects
+maclab-101:~ lucca001$ ls -i
+5178552 Desktop		5178531 Library		5178550 Pictures
+5178543 Documents	5178604 Movies		5178600 Public
+5178545 Downloads	5178547 Music		5187333 PycharmProjects
+maclab-101:~ lucca001$ ls -lt
+total 0
+drwxr-xr-x   5 lucca001  UWP\Domain Users   160 Feb 13 15:35 PycharmProjects
+drwx------+  7 lucca001  UWP\Domain Users   224 Feb 13 15:21 Documents
+drwx------@ 58 lucca001  UWP\Domain Users  1856 Feb 13 14:59 Library
+drwx------+  6 lucca001  UWP\Domain Users   192 Feb 13 14:46 Downloads
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Desktop
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Movies
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Music
+drwx------+  3 lucca001  UWP\Domain Users    96 Feb  4 14:31 Pictures
+drwxr-xr-x+  4 lucca001  UWP\Domain Users   128 Feb  4 14:31 Public
+maclab-101:~ lucca001$ ls -lt --reverse
+ls: illegal option -- -
+usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]
+maclab-101:~ lucca001$ file picture.jpg
+picture.jpg: cannot open `picture.jpg' (No such file or directory)
+maclab-101:~ lucca001$ less
+Missing filename ("less --help" for help)
+maclab-101:~ lucca001$ less /etc/passwd
+maclab-101:~ lucca001$ 
