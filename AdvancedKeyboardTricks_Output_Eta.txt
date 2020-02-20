@@ -1,0 +1,42 @@
+hansen@hansen-ThinkPad-X201:~$ ls
+Desktop    Public
+Documents  Python-3.8.1
+Downloads  Redirection_Eta.txt
+Music      SeeingTheWorldAsTheShellSeesIt_TheLinuxCommandLine_Eta.txt
+Photos     Templates
+Pictures   Videos
+hansen@hansen-ThinkPad-X201:~$ ls D
+Desktop/   Documents/ Downloads/ 
+hansen@hansen-ThinkPad-X201:~$ ls D
+Desktop/   Documents/ Downloads/ 
+hansen@hansen-ThinkPad-X201:~$ ls Do
+Documents/ Downloads/ 
+hansen@hansen-ThinkPad-X201:~$ ls Documents/
+pythonprojects
+hansen@hansen-ThinkPad-X201:~$ cd ..
+hansen@hansen-ThinkPad-X201:/home$ ls
+hansen
+hansen@hansen-ThinkPad-X201:/home$ cd hansen
+hansen@hansen-ThinkPad-X201:~$ history | less
+hansen@hansen-ThinkPad-X201:~$ history | grep /usr/bin
+   81  ls -l /usr/bin > ls-output.txt
+   88  ls -l /usr/bin >> ls-output.txt
+  101  ls -l /usr/bin | less
+  102  ls /bin /usr/bin | sort | less
+  103  ls /bin /usr/bin | sort | uniq 
+  104  ls /bin /usr/bin | sort | uniq | less
+  105  ls /bin /usr/bin | sort | uniq -d | less
+  107  ls /bin /usr/bin | sort | uniq | wc -l
+  108  ls /bin /usr/bin | sort | uniq | grep zip
+  112  ls /usr/bin | tail -n 5
+  114  ls /usr/bin | tee ls.txt | grep zip
+  154  file $(ls -d /usr/bin/* | grep zip)
+  177  history | grep /usr/bin
+hansen@hansen-ThinkPad-X201:~$ !88
+ls -l /usr/bin >> ls-output.txt
+hansen@hansen-ThinkPad-X201:~$ ls -l /usr/bin >> ls-output.txt
+hansen@hansen-ThinkPad-X201:~$ 
+
+
+
+
