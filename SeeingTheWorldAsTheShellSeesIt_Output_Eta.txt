@@ -1,0 +1,138 @@
+hansen@hansen-ThinkPad-X201:~$ echo this is a test
+this is a test
+hansen@hansen-ThinkPad-X201:~$ echo *
+Desktop Documents Downloads Music Pictures Public Python-3.8.1 Redirection_Eta.txt Templates Videos
+hansen@hansen-ThinkPad-X201:~$ ls 
+Desktop    Downloads  Pictures  Python-3.8.1         Templates
+Documents  Music      Public    Redirection_Eta.txt  Videos
+hansen@hansen-ThinkPad-X201:~$ echo D*
+Desktop Documents Downloads
+hansen@hansen-ThinkPad-X201:~$ echo *s
+Documents Downloads Pictures Templates Videos
+hansen@hansen-ThinkPad-X201:~$ echo {{:upper:}}*
+{{:upper:}}*
+hansen@hansen-ThinkPad-X201:~$ echo [[:upper:]]*
+Desktop Documents Downloads Music Pictures Public Python-3.8.1 Redirection_Eta.txt Templates Videos
+hansen@hansen-ThinkPad-X201:~$ echo /usr/*/share
+/usr/local/share
+hansen@hansen-ThinkPad-X201:~$ echo ~
+/home/hansen
+hansen@hansen-ThinkPad-X201:~$ echo ~foo
+~foo
+hansen@hansen-ThinkPad-X201:~$ echo $((2 + 2))
+4
+hansen@hansen-ThinkPad-X201:~$ echo $(($((5**2)) * 3))
+75
+hansen@hansen-ThinkPad-X201:~$ echo $((((5**2) * 3))
+> 
+> bash: unexpected EOF while looking for matching `)'
+bash: syntax error: unexpected end of file
+hansen@hansen-ThinkPad-X201:~$ echo $(((5**2) * 3))
+
+
+75
+hansen@hansen-ThinkPad-X201:~$ echo Five divided by two equals $((5/2))
+Five divided by two equals 2
+hansen@hansen-ThinkPad-X201:~$ echo with $((5%2)) left over
+with 1 left over
+hansen@hansen-ThinkPad-X201:~$ echo Front-{A,B,C}-Back
+Front-A-Back Front-B-Back Front-C-Back
+hansen@hansen-ThinkPad-X201:~$ echo Number{1..5}
+Number1 Number2 Number3 Number4 Number5
+hansen@hansen-ThinkPad-X201:~$ echo {01..15}
+01 02 03 04 05 06 07 08 09 10 11 12 13 14 15
+hansen@hansen-ThinkPad-X201:~$ echo {001..15
+{001..15
+hansen@hansen-ThinkPad-X201:~$ echo {001..15}
+001 002 003 004 005 006 007 008 009 010 011 012 013 014 015
+hansen@hansen-ThinkPad-X201:~$ echo {Z..A}
+Z Y X W V U T S R Q P O N M L K J I H G F E D C B A
+hansen@hansen-ThinkPad-X201:~$ echo a{A{1,2},B{3,4}b
+a{A1,B3b a{A1,B4b a{A2,B3b a{A2,B4b
+hansen@hansen-ThinkPad-X201:~$ echo a{A{1,2},B{3,4}}b
+aA1b aA2b aB3b aB4b
+hansen@hansen-ThinkPad-X201:~$ mkdir Photos
+hansen@hansen-ThinkPad-X201:~$ cd Photos
+hansen@hansen-ThinkPad-X201:~/Photos$ mkdir {2007..2009}-{01..12}
+hansen@hansen-ThinkPad-X201:~/Photos$ ls
+2007-01  2007-06  2007-11  2008-04  2008-09  2009-02  2009-07  2009-12
+2007-02  2007-07  2007-12  2008-05  2008-10  2009-03  2009-08
+2007-03  2007-08  2008-01  2008-06  2008-11  2009-04  2009-09
+2007-04  2007-09  2008-02  2008-07  2008-12  2009-05  2009-10
+2007-05  2007-10  2008-03  2008-08  2009-01  2009-06  2009-11
+hansen@hansen-ThinkPad-X201:~/Photos$ cd ..
+hansen@hansen-ThinkPad-X201:~$ echo $USER
+hansen
+hansen@hansen-ThinkPad-X201:~$ printenv | less
+hansen@hansen-ThinkPad-X201:~$ echo $SUER
+
+hansen@hansen-ThinkPad-X201:~$ echo $(ls)
+Desktop Documents Downloads Music Photos Pictures Public Python-3.8.1 Redirection_Eta.txt Templates Videos
+hansen@hansen-ThinkPad-X201:~$ ls -l $(which cp)
+-rwxr-xr-x 1 root root 141528 Jan 18  2018 /bin/cp
+hansen@hansen-ThinkPad-X201:~$ file $(ls -d /usr/bin/* | grep zip)
+/usr/bin/funzip:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=39ccd7cd52cbc3aabc550b813a6cebe97d853c74, stripped
+/usr/bin/gpg-zip:    POSIX shell script, ASCII text executable
+/usr/bin/mzip:       symbolic link to mtools
+/usr/bin/p7zip:      POSIX shell script, ASCII text executable
+/usr/bin/preunzip:   POSIX shell script, ASCII text executable
+/usr/bin/prezip:     POSIX shell script, ASCII text executable
+/usr/bin/prezip-bin: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 3.2.0, BuildID[sha1]=f8e18f9ebb7d911b28c1f11d6db9040819073348, stripped
+/usr/bin/unzip:      ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=e790db654fad0b03076d241bcd0e766b1c38ac5b, stripped
+/usr/bin/unzipsfx:   ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=c39983b44457ccea57331f8415fffe811980f984, stripped
+/usr/bin/zip:        ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=c828586e6e7cf929500a5b9c04faece9eceed5cc, stripped
+/usr/bin/zipcloak:   ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=6675095584351a4d9e63370ceb1dcce0232c6140, stripped
+/usr/bin/zipdetails: Perl script text executable
+/usr/bin/zipgrep:    POSIX shell script, ASCII text executable
+/usr/bin/zipinfo:    ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=e790db654fad0b03076d241bcd0e766b1c38ac5b, stripped
+/usr/bin/zipnote:    ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=9d9a7264805021adae207c5d13fb0ab43a6fb04e, stripped
+/usr/bin/zipsplit:   ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=80f65d65f35b6bb9d37e8074bfa1e01c4b7ce18e, stripped
+hansen@hansen-ThinkPad-X201:~$ ls -l 'which cp'
+ls: cannot access 'which cp': No such file or directory
+hansen@hansen-ThinkPad-X201:~$ ls -l `which cp`
+-rwxr-xr-x 1 root root 141528 Jan 18  2018 /bin/cp
+hansen@hansen-ThinkPad-X201:~$ echo this is a    test
+this is a test
+hansen@hansen-ThinkPad-X201:~$ echo The total is $100.00
+The total is 00.00
+hansen@hansen-ThinkPad-X201:~$ ls -l two words.txt
+ls: cannot access 'two': No such file or directory
+ls: cannot access 'words.txt': No such file or directory
+hansen@hansen-ThinkPad-X201:~$ ls -l "two words.txt"
+ls: cannot access 'two words.txt': No such file or directory
+hansen@hansen-ThinkPad-X201:~$ echo "$USER $((2+2)) $(cal)"
+hansen 4    February 2020      
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+                      
+hansen@hansen-ThinkPad-X201:~$ echo this is a     test
+this is a test
+hansen@hansen-ThinkPad-X201:~$ echo "this is a      test"
+this is a      test
+hansen@hansen-ThinkPad-X201:~$ echo $(cal)
+February 2020 Su Mo Tu We Th Fr Sa 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
+hansen@hansen-ThinkPad-X201:~$ echo "$(cal)"
+   February 2020      
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+                      
+hansen@hansen-ThinkPad-X201:~$ echo text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER
+text /home/hansen/Redirection_Eta.txt a b foo 4 hansen
+hansen@hansen-ThinkPad-X201:~$ echo "text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER"
+text ~/*.txt {a,b} foo 4 hansen
+hansen@hansen-ThinkPad-X201:~$ echo 'text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER'
+text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER
+hansen@hansen-ThinkPad-X201:~$ echo "The balance for user $USER is: \$5.00"
+The balance for user hansen is: $5.00
+hansen@hansen-ThinkPad-X201:~$ mv bad\&filename good_filename
+mv: cannot stat 'bad&filename': No such file or directory
+hansen@hansen-ThinkPad-X201:~$ 
+
