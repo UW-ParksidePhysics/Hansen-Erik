@@ -1,0 +1,118 @@
+Last login: Thu Feb 20 14:28:26 on ttys002
+maclab-101:~ lucca001$ Last login: Thu Feb 20 14:23:06 on ttys001
+
+wtmp begins Thu Feb 20 14:42 
+maclab-101:~ lucca001$ maclab-101:~ lucca001$ file /etc/shadow
+-bash: maclab-101:~: command not found
+maclab-101:~ lucca001$ /etc/shadow: cannot open `/etc/shadow' (No such file or directory)
+> maclab-101:~ lucca001$ less /etc/shadow
+> /etc/shadow: No such file or directory
+> maclab-101:~ lucca001$ id
+> uid=1398380321(lucca001) gid=1116625352(UWP\Domain Users) groups=1116625352(UWP\Domain Users),12(everyone),62(netaccounts),122488206(UWP\2020-SPRG-PENG-211-001),125416489(UWP\2020-SPRG-PHYS-241-001),131903651(UWP\2019-SPRG-ENGL-201-002),573945132(UWP\DL_ALL-ENRL-CUR-TRM_A),1179213447(UWP\DL_ALL-ENRL-P2-CUR-F1_A),1239965828(UWP\2019-FALL-PHYS-202-001),1436383428(UWP\2019-FALL-MATH-222-001),2059522209(UWP\2020-SPRG-PENG-214-001),219400799(UWP\DL_ADV-LEWISB),347031999(UWP\2019-SPRG-CHEM-102-001),764872614(UWP\2019-FALL-MUSI-106-003),884829712(UWP\DL_ALL-EMPL-STUD_A),992068840(UWP\2019-SPRG-CHEM-104-001),1427030562(UWP\Student Users),1981629663(UWP\DL_STU-ENRL-CUR-UGRD_A),2124421418(UWP\PSO All Campus),702(com.apple.sharepoint.group.2),701(com.apple.sharepoint.group.1),333250915(UWP\Publisher),376089144(UWP\CTX-Mathematica),1102773013(UWP\Windows Explorer),1535688893(UWP\PS Elements),1953500456(UWP\Parkside-Campus Info-traverse),2110368857(UWP\SSH),178840370(UWP\Internet Explorer),183735245(UWP\Accessories),336527048(UWP\CreativeServices-Public-full),714050089(UWP\InfoPath),739946822(UWP\Notepad_Plus),839023789(UWP\Visio),993404883(UWP\Project),1111887947(UWP\Parkside-Campus Info-Leadership-read),1289955258(UWP\Emergency List),1371522217(UWP\Adobe Reader),1432469368(UWP\Office),1458183425(UWP\Notepad),1875240670(UWP\IBM Director Client),2144369774(UWP\SPSS)
+> maclab-101:~ lucca001$ id
+> uid=1398380321(lucca001) gid=1116625352(UWP\Domain Users) groups=1116625352(UWP\Domain Users),12(everyone),62(netaccounts),122488206(UWP\2020-SPRG-PENG-211-001),125416489(UWP\2020-SPRG-PHYS-241-001),131903651(UWP\2019-SPRG-ENGL-201-002),573945132(UWP\DL_ALL-ENRL-CUR-TRM_A),1179213447(UWP\DL_ALL-ENRL-P2-CUR-F1_A),1239965828(UWP\2019-FALL-PHYS-202-001),1436383428(UWP\2019-FALL-MATH-222-001),2059522209(UWP\2020-SPRG-PENG-214-001),219400799(UWP\DL_ADV-LEWISB),347031999(UWP\2019-SPRG-CHEM-102-001),764872614(UWP\2019-FALL-MUSI-106-003),884829712(UWP\DL_ALL-EMPL-STUD_A),992068840(UWP\2019-SPRG-CHEM-104-001),1427030562(UWP\Student Users),1981629663(UWP\DL_STU-ENRL-CUR-UGRD_A),2124421418(UWP\PSO All Campus),702(com.apple.sharepoint.group.2),701(com.apple.sharepoint.group.1),333250915(UWP\Publisher),376089144(UWP\CTX-Mathematica),1102773013(UWP\Windows Explorer),1535688893(UWP\PS Elements),1953500456(UWP\Parkside-Campus Info-traverse),2110368857(UWP\SSH),178840370(UWP\Internet Explorer),183735245(UWP\Accessories),336527048(UWP\CreativeServices-Public-full),714050089(UWP\InfoPath),739946822(UWP\Notepad_Plus),839023789(UWP\Visio),993404883(UWP\Project),1111887947(UWP\Parkside-Campus Info-Leadership-read),1289955258(UWP\Emergency List),1371522217(UWP\Adobe Reader),1432469368(UWP\Office),1458183425(UWP\Notepad),1875240670(UWP\IBM Director Client),2144369774(UWP\SPSS)
+> maclab-101:~ lucca001$ > foo.txt
+> maclab-101:~ lucca001$ ls -l foo.txt
+> -rw-r--r--  1 lucca001  UWP\Domain Users  0 Feb 20 14:32 foo.txt
+> maclab-101:~ lucca001$ > foo.txt
+> maclab-101:~ lucca001$ 
+> maclab-101:~ lucca001$ ls -l foo.txt
+> -rw-r--r--  1 lucca001  UWP\Domain Users  0 Feb 20 14:34 foo.txt
+> maclab-101:~ lucca001$ chmod 600 foo.txt
+> maclab-101:~ lucca001$ ls -l foo.txt
+> -rw-------  1 lucca001  UWP\Domain Users  0 Feb 20 14:34 foo.txt
+> maclab-101:~ lucca001$ rm -f foo.txt
+> maclab-101:~ lucca001$ umask
+> 0022
+> maclab-101:~ lucca001$ > foo.txt
+> maclab-101:~ lucca001$ ls -l foo.txt
+> -rw-r--r--  1 lucca001  UWP\Domain Users  0 Feb 20 14:37 foo.txt
+> maclab-101:~ lucca001$ rm foo.txt
+> maclab-101:~ lucca001$ umask 0000
+> maclab-101:~ lucca001$ > foo.txt
+> maclab-101:~ lucca001$ ls -l foo.txt 
+> -rw-rw-rw-  1 lucca001  UWP\Domain Users  0 Feb 20 14:38 foo.txt
+> maclab-101:~ lucca001$ rm foo.txt 
+> maclab-101:~ lucca001$ rm foo.txt; umask 0002 
+> rm: foo.txt: No such file or directory
+> maclab-101:~ lucca001$ > foo.txt
+> maclab-101:~ lucca001$ ls -l foo.txt
+> -rw-rw-r--  1 lucca001  UWP\Domain Users  0 Feb 20 14:40 foo.txt
+> maclab-101:~ lucca001$ umask 0000
+> maclab-101:~ lucca001$ rm foo.txt; umask 0002 
+> maclab-101:~ lucca001$ ls -l foo.txt
+> ls: foo.txt: No such file or directory
+> maclab-101:~ lucca001$ su -
+> Password:
+> su: Sorry
+> su -c
+> 
+maclab-101:~ lucca001$ su -c
+su: illegal option -- c
+usage: su [-] [-flm] [login [args]]
+maclab-101:~ lucca001$ su -c 'ls -l /root *'
+su: illegal option -- c
+usage: su [-] [-flm] [login [args]]
+maclab-101:~ lucca001$ sudo backup_script
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 2 incorrect password attempts
+maclab-101:~ lucca001$ sudo -l
+Password:
+maclab-101:~ lucca001$ sudo cp myfile.txt ~tony
+Password:
+maclab-101:~ lucca001$ sudu ls -l ~tony/myfile.txt
+-bash: sudu: command not found
+maclab-101:~ lucca001$ sudo chown tony: ~tony/mifile.txt
+Password:
+maclab-101:~ lucca001$ sudo ls -l ~tony/myfile.txt
+Password:
+maclab-101:~ lucca001$ sudo mkdir /usr/local/share/music
+Password:
+maclab-101:~ lucca001$ ls -ld /usr/local/share/music
+ls: /usr/local/share/music: No such file or directory
+maclab-101:~ lucca001$ ls -ld /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-101:~ lucca001$ sudo chown :mucic /usr/local/share/Music
+Password:
+maclab-101:~ lucca001$ sudo chmoe 775 /usr/local/share/Music
+Password:
+maclab-101:~ lucca001$ ls -ld /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-101:~ lucca001$ sudo chmod 775 /usr/local/share/Music
+Password:
+maclab-101:~ lucca001$ > /usr/local/share/Music/testfile
+-bash: /usr/local/share/Music/testfile: No such file or directory
+maclab-101:~ lucca001$ ls -l /usr/local/share/music
+ls: /usr/local/share/music: No such file or directory
+maclab-101:~ lucca001$ sudo chmod g+s /usr/local/share/music
+Password:
+maclab-101:~ lucca001$ ls -ld /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-101:~ lucca001$ umask 0002
+maclab-101:~ lucca001$ rm /usr/local/share/Music/test_file
+rm: /usr/local/share/Music/test_file: No such file or directory
+maclab-101:~ lucca001$ > /usr/local/share/Music/test_fle
+-bash: /usr/local/share/Music/test_fle: No such file or directory
+maclab-101:~ lucca001$ > /usr/local/share/Music/test_file
+-bash: /usr/local/share/Music/test_file: No such file or directory
+maclab-101:~ lucca001$ mkdir /user/local/share/Music/test-dir
+mkdir: /user/local/share/Music: No such file or directory
+maclab-101:~ lucca001$ ls -l /usr/local/share/Music
+ls: /usr/local/share/Music: No such file or directory
+maclab-101:~ lucca001$ passwd
+Changing password for lucca001.
+Old Password:
+maclab-101:~ lucca001$ passwd
+Changing password for lucca001.
+Old Password:
+New Password:
+Retype New Password:
+maclab-101:~ lucca001$ 
+maclab-101:~ lucca001$ 
+maclab-101:~ lucca001$ 
+maclab-101:~ lucca001$ 
+maclab-101:~ lucca001$ 
