@@ -1,0 +1,56 @@
+MatLab_Example1_2_3
+
+x =
+
+   -0.5000
+    1.5000
+   -0.5000
+
+MatLab_Example2_2_3
+It made a graph with 3 cosine plots
+MatLab_Example3_2_3
+Enter the points scored in the first game 
+23
+Enter the points scored in the second game 
+10
+Enter the points scored in the third game 
+15
+
+average =
+
+    16
+
+MatLab_Exercise1_2_3
+Apples, Bananas and Cantaloupe are priced as follows
+$0.29 
+$0.05 
+$0.89 
+MatLab_Exercise2_2_3
+Enter Temperature in Degrees F
+32
+That is equivalent to 0.00 Degrees C
+MatLab_Exercise2_2_3
+Enter Temperature in Degrees F
+212
+That is equivalent to 100.00 Degrees C
+MatLab_Exercise3_2_3
+Enter Persons Height and Weight in Feet_Inches and Pounds
+Enter Feet
+5
+Enter Inches
+15
+Enter Pounds
+180
+The Persons Height is 190.50 cm
+The Persons Weight is 81.65 kg
+MatLab_Exercise3_2_3
+Enter Persons Height and Weight in Feet_Inches and Pounds
+Enter Feet
+5
+Enter Inches
+9
+Enter Pounds
+155
+The Persons Height is 175.26 cm
+The Persons Weight is 70.31 kg
+Â 
