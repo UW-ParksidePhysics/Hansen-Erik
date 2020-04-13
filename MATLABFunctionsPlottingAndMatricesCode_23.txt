@@ -1,0 +1,54 @@
+﻿a = 5; x = 2; y = 8;
+y = exp(-a)*sin(x)+10*sqrt(y)
+log(142)
+log10(142)
+sin(pi/4)
+exp(10)
+
+
+sd1 = .5;
+sd2 = 1;
+sd3 = 1.5;
+mu = 5;
+x = linspace(0,10,100)
+y1 = (1/(sqrt(2*pi)*sd1))*exp(-(x-mu).^2/(2*sd1^2));
+y2 = (1/(sqrt(2*pi)*sd2))*exp(-(x-mu).^2/(2*sd2^2));
+y3 = (1/(sqrt(2*pi)*sd3))*exp(-(x-mu).^2/(2*sd3^2));
+plot(x,y1,'--',x,y2,'-',x,y3,':')
+axis([0 10, 0 1])
+xlabel('x')
+ylabel('(x-5),sigma')
+legend('.5 sigma','1 sigma','1.5 sigma')
+
+
+n=5
+v=2*ones(1,n);
+p=ones(1,n-1);
+B=diag(v);
+C=diag(p,1);
+D=diag(p,-1);
+A=B+C+D;
+H=(1/(2*(1/(5-1))^2))*A
+[Eigenvectors,Eigenvalues]=eig(H)
+x = linspace(1/(5+1),5/(5+1),5);
+y = (sqrt(2)*sin(pi*x));
+plot(x,Eigenvectors(:,5),'--');
+plot(y,'-')
+xlim([0 1])
+
+
+n=10
+v=2*ones(1,n);
+p=ones(1,n-1);
+B=diag(v);
+C=diag(p,1);
+D=diag(p,-1);
+A=B+C+D;
+H=(1/(2*(1/(5-1))^2))*A
+[Eigenvectors,Eigenvalues]=eig(H)
+npoints = 10;
+x = linspace(1/(npoints+1),npoints/(npoints+1),npoints);
+y = (sqrt(2)*sin(pi*x));
+plot(x,Eigenvectors(:,10),'--');
+plot(y,'-')
+xlim([0 1])
