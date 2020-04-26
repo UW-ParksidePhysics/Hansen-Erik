@@ -1,0 +1,24 @@
+from matplotlib.pylab import *
+from numpy import *
+
+n = 10
+v = 2*ones((1, n))
+p = ones((1, n-1))
+B = diag((v, 1))
+C = diag((p, 2))
+D = diag(p)
+A = B+C+D
+H = (1/(2*(1/(5-1))**2))*A
+print(H)
+D, V = linalg.eig(H)
+print('Eigenvalues', D)
+print('Eigenvectors', V)
+npoints = 10
+x = linspace(1/(npoints+1), npoints/(npoints+1), npoints)
+y = (sqrt(2)*sin(pi*x))
+plot(x, (V[:9], '-', x, y, '--'))
+U = (sqrt(sum(V[:9]**2*(npoints/(npoints+1))-(1/(npoints+1)))))
+W = linalg.norm(V[:9])
+Z = U/W
+print(Z)
+

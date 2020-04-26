@@ -1,0 +1,22 @@
+from numpy import *
+
+n = 5
+v = 2*ones((1, n))
+p = ones((1, n-1))
+B = diag((v, 1))
+C = diag((p, 2))
+D = diag(p)
+A = B+C+D
+H = (1/(2*(1/(5-1))**2))*A
+print(H)
+D, V = linalg.eig(H)
+print('Eigenvalues', D)
+print('Eigenvectors', V)
+x = linspace(1/(5+1), 5/(5+1), 5)
+y = (sqrt(2)*sin(pi*x))
+plot(x, (V[:4], '-', x, y, '--'))
+U = (sqrt(sum(V[:4]**2*(2/3))))
+W = linalg.norm(V[:4])
+Z = V[:4]/W
+print(Z)
+
