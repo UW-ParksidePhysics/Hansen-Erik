@@ -19,7 +19,7 @@ def two_column_text_read(file_name):
 
 try:
 
-    (x, y) = two_column_text_read(input('Input File_name: ', ))  # input filename
+    (x, y) = two_column_text_read('Pb.Fm-3m.GGA-PBE.volumes_energies.dat.txt')  # input filename
     x1 = array(x)
     y1 = array(y)  # turn list variables into array
     read_data = column_stack((x1, y1))  # group data into x, y points
